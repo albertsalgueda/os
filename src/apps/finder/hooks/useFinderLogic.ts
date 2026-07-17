@@ -16,6 +16,11 @@ import type {
 import { useTranslation } from "react-i18next";
 import { ViewType, SortType } from "../components/FinderMenuBar";
 import { useFileSystem, DocumentContent } from "./useFileSystem";
+import {
+  isLocalPath,
+  toRealPath,
+  LOCAL_ROOT_PATH,
+} from "./useLocalFileSystem";
 import { dbOperations } from "@/utils/indexedDB";
 import {
   calculateStorageSpace,
@@ -152,8 +157,11 @@ const getFileType = (
 
 // Function to decode URL-encoded path for display
 const getDisplayPath = (path: string): string => {
+  // For the local disk, show the real filesystem path (e.g. /home/albert/...)
+  // instead of the internal /local-prefixed virtual path.
+  const displaySource = isLocalPath(path) ? toRealPath(path) : path;
   // Split path by segments and decode each segment
-  return path
+  return displaySource
     .split("/")
     .map((segment) => {
       try {
@@ -1592,7 +1600,7 @@ export function useFinderLogic({
         isAirDrop: false,
       }));
     return [
-      { name: t("apps.finder.window.macintoshHd"), path: "/", icon: "/icons/default/disk.png", divider: false, isAirDrop: false },
+      { name: t("apps.finder.window.macintoshHd"), path: LOCAL_ROOT_PATH, icon: "/icons/default/disk.png", divider: false, isAirDrop: false },
       {
         name: t("apps.finder.airdrop.title"),
         path: "__airdrop__",
@@ -1606,6 +1614,8 @@ export function useFinderLogic({
 
   const activeSidebarPath = useMemo(() => {
     if (isAirDropView) return "__airdrop__";
+    // Any path on the local disk highlights the Macintosh HD entry.
+    if (isLocalPath(currentPath)) return LOCAL_ROOT_PATH;
     if (currentPath === "/") return "/";
     const firstSegment = currentPath.split("/").filter(Boolean)[0];
     return "/" + firstSegment;
@@ -1616,7 +1626,7 @@ export function useFinderLogic({
     if (isAirDropView) {
       return t("apps.finder.airdrop.title");
     }
-    if (currentPath === "/") {
+    if (currentPath === "/" || currentPath === LOCAL_ROOT_PATH) {
       return t("apps.finder.window.macintoshHd");
     }
     // Get the last path segment and decode it

@@ -29,6 +29,7 @@ import { useThemeFlags } from "@/hooks/useThemeFlags";
 import { FINDER_ANALYTICS, track } from "@/utils/analytics";
 import { createClientLogger } from "@/utils/logger";
 import { getDefaultFileApp } from "@/utils/fileAssociations";
+import { useLocalFileSystem, isLocalPath } from "./useLocalFileSystem";
 import {
   ExtendedDisplayFileItem,
   getParentPath,
@@ -341,6 +342,7 @@ export function useFileSystem(
     reset: state.reset,
   }));
   const launchApp = useLaunchApp();
+  const { listLocalDirectory, openLocalFile } = useLocalFileSystem();
   const {
     tracks: ipodTracks,
     setLibrarySource: setIpodLibrarySource,
@@ -491,6 +493,18 @@ export function useFileSystem(
     try {
       let displayFiles: ExtendedDisplayFileItem[] = [];
       const nextObjectUrls = new Set<string>();
+
+      // 0. Handle Local Disk (real filesystem via /api/local-fs)
+      if (isLocalPath(currentPath)) {
+        const localFiles = await listLocalDirectory(currentPath);
+        // Local listings create no object URLs; revoke any stale ones.
+        objectUrlsRef.current.forEach((previousUrl) =>
+          URL.revokeObjectURL(previousUrl)
+        );
+        objectUrlsRef.current = new Set();
+        setFiles(localFiles);
+        return;
+      }
 
       // 1. Handle Virtual Directories
       if (currentPath === "/Applications") {
@@ -719,6 +733,7 @@ export function useFileSystem(
     videoTracks,
     internetExplorerFavorites,
     isAdmin,
+    listLocalDirectory,
   ]);
 
   // Define handleFileOpen
@@ -728,6 +743,24 @@ export function useFileSystem(
       launchOrigin?: LaunchOriginRect,
       requestedAppId?: AppId,
     ) => {
+      // Handle Local Disk files/dirs (real filesystem) before VFS logic.
+      if (isLocalPath(file.path)) {
+        if (file.isDirectory) {
+          navigateToPath(file.path);
+        } else {
+          try {
+            await openLocalFile(file, launchOrigin);
+          } catch (err) {
+            console.error(
+              `[useFileSystem] Error opening local file ${file.path}:`,
+              err
+            );
+            setError(`Failed to open ${file.name}`);
+          }
+        }
+        return;
+      }
+
       // 0. Handle Aliases/Shortcuts first - resolve to target before processing
       // Handle nested aliases by resolving until we get to the actual target
       let currentFile = file;
@@ -1052,6 +1085,7 @@ export function useFileSystem(
       ensureDefaultContent,
       fetchAppletContentFromShare,
       getFileItem,
+      openLocalFile,
     ]
   );
 
