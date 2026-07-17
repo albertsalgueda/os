@@ -165,9 +165,8 @@ export function getRedisBackend(): RedisBackend {
     return "upstash-rest";
   }
 
-  throw new Error(
-    "Missing Redis configuration. Set REDIS_URL for standard Redis or REDIS_KV_REST_API_URL + REDIS_KV_REST_API_TOKEN for Upstash REST."
-  );
+  // Return null when Redis is not configured — callers must handle gracefully.
+  return null as unknown as RedisBackend;
 }
 
 function serializeRedisValue(value: unknown): string {
