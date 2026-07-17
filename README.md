@@ -1,222 +1,43 @@
-# ryOS — A Web-Based Agentic AI OS, made with Cursor
+# fileOS — AgentOS for Hermes / OpenClaw VMs
 
-A modern web-based desktop environment inspired by classic macOS and Windows, built with React, TypeScript, and AI. Features multiple built-in applications, a familiar desktop interface, and a system-aware AI assistant. Works on all devices—desktop, tablet, and mobile.
+A web-based desktop environment designed as the OS interface for agent virtual machines. Browse, inspect, and manage files on your agent's VM through a familiar macOS-like UI.
 
-**[Read ryOS Docs](https://os.ryo.lu/docs)** — Architecture, API reference, and developer guides
+> Fork of [ryOS](https://github.com/ryokun6/ryos) by Ryo Lu.
 
-## Features
+## What's different
 
-### Desktop Environment
+- **Real filesystem browser** — Finder connects to the host VM filesystem via a local API, not a virtual file system
+- **Read-only by design** — browse and view files, no accidental writes or deletes
+- **Tailscale-only access** — locked to your private network, no public exposure
+- **Stripped branding** — no ryOS references, no AI assistant, no app store, just the file browser
+- **Zero config** — runs as a systemd service, no Redis or external dependencies required
 
-- Authentic macOS and Windows-style desktop interactions
-- Multi-instance window manager with drag, resize, and minimize
-- Customizable wallpapers (photos, patterns, or videos)
-- System-wide sound effects and AI assistant (Ryo)
-- Virtual file system with local storage persistence and backup/restore
-
-### Themes
-
-- **System 7** — Classic Mac OS look with top menubar and traffic-light controls
-- **Aqua** — Mac OS X style with modern aesthetics
-- **Windows XP** — Bottom taskbar, Start menu, and classic window controls
-- **Windows 98** — Retro Windows experience with mobile-safe controls
-
-### Built-in Applications
-
-- **Finder** — File manager with Quick Access, storage info, and smart file detection
-- **TextEdit** — Rich text editor with markdown, slash commands, and multi-window support
-- **MacPaint** — Bitmap graphics editor with drawing tools, patterns, and import/export
-- **Videos** — VCR-style YouTube player with playlist management
-- **Soundboard** — Record and play custom sounds with waveform visualization
-- **Synth** — Virtual synthesizer with multiple waveforms, effects, and MIDI support
-- **Photo Booth** — Camera app with real-time filters and photo gallery
-- **Internet Explorer** — Time Machine that explores web history via Wayback Machine; AI generates sites for years before 1996 or in the future
-- **Chats** — AI chat with Ryo, public/private chat rooms, voice messages, and tool calling
-- **Control Panels** — System preferences: appearance, sounds, backup/restore, and file system management
-- **Minesweeper** — Classic puzzle game
-- **Virtual PC** — DOS emulator for classic games (Doom, SimCity, etc.)
-- **Infinite Mac** — Classic Mac OS emulators (System 1.0 to Mac OS X 10.4) via Infinite Mac
-- **Terminal** — Unix-like CLI with AI integration (`ryo <prompt>`)
-- **iPod** — 1st-gen iPod music player with YouTube import, lyrics, and translation
-- **Karaoke** — Synced lyrics player with fullscreen display modes
-- **Ryo TV** — CRT-style channel surfing with AI-generated channels
-- **Winamp** — Classic Winamp media player
-- **Calendar** — iCal-style events, todos, and sync
-- **Contacts** — Address book with vCard import and sync
-- **Dashboard** — Tiger-style widgets for weather, stocks, translation, dictionary, aquarium, and more
-- **Maps** — Apple MapKit place search with chat integration
-- **Books** — EPUB reader with synced reading progress and Finder import
-- **Calculator** — Theme-aware calculator with basic, scientific, and conversion modes
-- **Admin** — Restricted analytics and system administration
-- **Applet Store** — Browse, install, and share community-created HTML applets
-- **Stickies** — Sticky notes for quick reminders
-
-## Quick Start
-
-1. Launch apps from the Finder, Desktop, or Apple/Start menu
-2. Drag windows to move, drag edges to resize
-3. Use Control Panels to customize appearance and sounds
-4. Chat with Ryo AI for help or to control apps
-5. Files auto-save to browser storage
-
-## Project Structure
-
-```
-├── api/              # API route handlers (Node-style, served by the standalone Bun server)
-├── electron/         # Electron shell, menu, preload, and updater
-├── public/           # Static assets (icons, wallpapers, sounds, fonts)
-├── scripts/          # Build + maintenance + standalone API runner
-├── tests/            # Bun test suites (unit/<domain>, integration/api, helpers)
-├── src/
-│   ├── api/          # Frontend API clients
-│   ├── apps/         # Individual app modules
-│   ├── components/   # Shared React components (ui, dialogs, layout)
-│   ├── config/       # Configuration files
-│   ├── hooks/        # Custom React hooks
-│   ├── lib/          # Libraries and utilities
-│   ├── services/     # VFS and realtime service facades
-│   ├── shared/       # Shared contracts and domain types
-│   ├── stores/       # Zustand state management
-│   ├── styles/       # CSS and styling
-│   ├── sync/         # Cloud Sync v2 client engine
-│   ├── themes/       # OS theme definitions
-│   ├── types/        # TypeScript definitions
-│   ├── utils/        # Utilities
-│   └── workers/      # Web workers
-```
-
-## Tech Stack
-
-- **Frontend:** React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Motion
-- **Audio:** Tone.js, WaveSurfer.js
-- **3D:** Three.js (shaders)
-- **Text Editor:** TipTap
-- **State:** Zustand
-- **Storage:** IndexedDB, LocalStorage, Redis (Upstash REST or `REDIS_URL`)
-- **AI:** OpenAI, Anthropic, Google via Vercel AI SDK
-- **Real-time:** Pusher or local WebSocket
-- **API Runtime:** Standalone Bun server (Node-style handlers)
-- **Build:** Vite, Bun
-- **Desktop:** Electron + electron-updater
-- **Deployment:** Docker/GHCR + Coolify, Electron desktop releases
-
-## Scripts
+## Quick start
 
 ```bash
-bun run dev          # Start full stack (API + Vite with proxy) — the default
-bun run dev:vite     # Start Vite dev server only (frontend-only, no API)
-bun run dev:api      # Start standalone Bun API server only (port 3000)
-bun run build        # Build for production
-bun run start        # Start the self-host/Coolify production server
-bun run lint         # Run ESLint
-bun run preview      # Preview production build
-bun run api:start    # Run standalone API server in production mode
-bun run electron:dev # Bundle and launch the Electron shell for local Vite
-bun run electron:build # Build desktop artifacts with electron-builder
-```
-
-For local development, `bun run dev` starts both the standalone Bun API server and the Vite dev server with an `/api` proxy.
-
-## Running the API Separately
-
-Use this when you only need the API server (e.g. for running tests):
-
-```bash
-# Terminal 1 - standalone API (loads .env/.env.local)
-bun run dev:api
-
-# Terminal 2 - frontend (optional, if you also need the UI)
-bun run dev:vite
-```
-
-The standalone API listens on:
-
-- `API_PORT` (fallback: `PORT`, then `3000`)
-- `API_HOST` (fallback: `0.0.0.0`)
-
-You can run API tests directly against it:
-
-```bash
-API_URL=http://localhost:3000 bun run test:new-api
-```
-
-Unit and integration suites use Bun's native runner:
-
-```bash
-bun run test:unit    # Unit/wiring suites without a server
-bun run test:api     # API integration suites; requires bun run dev:api
-```
-
-## VPS / self-hosting path
-
-ryOS now supports a **single Bun production server** for self-hosting and container platforms like Coolify. That server handles:
-
-- `/api/*`
-- static frontend assets from `dist/`
-- SPA deep links
-- docs clean URLs
-- optional local websocket realtime
-
-### Quick self-host start
-
-```bash
+git clone https://github.com/albertsalgueda/os.git
+cd os
 bun install
 bun run build
-APP_PUBLIC_ORIGIN="https://your-domain.com" \
-API_ALLOWED_ORIGINS="https://your-domain.com" \
-bun run start
+PORT=8796 bun run start
 ```
 
-### Redis backend options
+Open `http://localhost:8796` — Finder opens directly to `/home/` on the host machine.
 
-Use **either**:
+## Architecture
 
-```bash
-# Standard Redis / Valkey / self-hosted Redis
-REDIS_URL="redis://default:password@redis:6379/0"
+```
+Browser (Finder UI)
+   │
+   └─ /api/local-fs/list?path=...   →  real fs.readdir + fs.stat
+   └─ /api/local-fs/read?path=...   →  text file content
+   └─ /api/local-fs/serve?path=...  →  binary files (images, PDFs, etc.)
 ```
 
-or:
-
-```bash
-# Upstash REST
-REDIS_KV_REST_API_URL="https://..."
-REDIS_KV_REST_API_TOKEN="..."
-```
-
-### Realtime backend options
-
-Use **either**:
-
-```bash
-# Existing Pusher path
-REALTIME_PROVIDER="pusher"
-PUSHER_APP_ID="..."
-PUSHER_KEY="..."
-PUSHER_SECRET="..."
-PUSHER_CLUSTER="us3"
-```
-
-or:
-
-```bash
-# Local websocket path (best paired with REDIS_URL)
-REALTIME_PROVIDER="local"
-REALTIME_WS_PATH="/ws"
-```
-
-Detailed runbook: [`docs/1.3-self-hosting-vps.md`](docs/1.3-self-hosting-vps.md)
-
-### CI and releases
-
-- Pull requests run `bun run test:unit` and `bun run build`.
-- Pushes to `main` build and publish the GHCR image for Coolify deploys.
-- `v*` tags build signed Electron releases for macOS and Windows with update feeds.
+- Filesystem API jailed to `/home/` — no traversal, no symlink escapes
+- Dotfiles hidden by default (`.git`, `.env`, `.ssh`)
+- Text files open in TextEdit, images preview inline, PDFs open in browser
 
 ## License
 
-AGPL-3.0 — See [LICENSE](LICENSE) for details.
-
-## Contributing
-
-Contributions welcome! Please submit a Pull Request.
+MIT — same as upstream ryOS.
