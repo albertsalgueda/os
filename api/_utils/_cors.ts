@@ -57,7 +57,8 @@ function isLocalhostOrigin(origin: string): boolean {
 function isTailscaleOrigin(origin: string): boolean {
   const parsed = parseOrigin(origin);
   if (!parsed) return false;
-  return parsed.hostname.endsWith(TAILSCALE_ALLOWED_SUFFIX);
+  const hostname = parsed.hostname.toLowerCase();
+  return hostname.endsWith(TAILSCALE_ALLOWED_SUFFIX) || hostname.endsWith(".albertsalgueda.com");
 }
 
 function normalizeOrigin(origin: string): string | null {
