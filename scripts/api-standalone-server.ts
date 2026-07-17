@@ -863,11 +863,10 @@ function validateEnv(): void {
   }
 
   if (missing.length > 0) {
-    console.error(
-      `[api-standalone] Required env vars missing:\n` +
+    console.warn(
+      `[api-standalone] Required env vars missing (some features will be unavailable):\n` +
         missing.map((v) => `  - ${v.name}: ${v.description}`).join("\n"),
     );
-    process.exit(1);
   }
 }
 
