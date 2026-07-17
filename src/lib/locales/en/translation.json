@@ -134,13 +134,13 @@
       "restoringSystem": "Restoring System…",
       "formattingFileSystem": "Formatting File System…",
       "debugBootScreenTest": "Debug Boot Screen Test…",
-      "updatingToRyOS": "Updating to ryOS {{version}}…",
-      "updatingToRyOSWithBuild": "Updating to ryOS {{version}} ({{buildNumber}})…",
+      "updatingToRyOS": "Updating to albertOS {{version}}…",
+      "updatingToRyOSWithBuild": "Updating to albertOS {{version}} ({{buildNumber}})…",
       "rebooting": "Rebooting…",
       "resetAllSettings": "Reset All Settings",
-      "resetAllSettingsDesc": "Are you sure you want to reset all settings? This will clear all saved settings and restore default states. ryOS will restart after reset.",
+      "resetAllSettingsDesc": "Are you sure you want to reset all settings? This will clear all saved settings and restore default states. albertOS will restart after reset.",
       "formatFileSystem": "Format File System",
-      "formatFileSystemDesc": "Are you sure you want to format the file system? This will permanently delete all documents (except sample documents), images, and custom wallpapers. ryOS will restart after format."
+      "formatFileSystemDesc": "Are you sure you want to format the file system? This will permanently delete all documents (except sample documents), images, and custom wallpapers. albertOS will restart after format."
     },
     "desktop": {
       "setWallpaper": "Set Wallpaper…",
@@ -172,7 +172,7 @@
       "appDescription": "Relaunch it to open a fresh window, or quit this crashed window. Other open apps will keep running.",
       "relaunch": "Relaunch",
       "desktopHeading": "Desktop quit unexpectedly",
-      "desktopDescription": "Reload ryOS to restore the Dock, Desktop, and menu bar.",
+      "desktopDescription": "Reload albertOS to restore the Dock, Desktop, and menu bar.",
       "reloadDesktop": "Reload Desktop"
     },
     "keys": {
@@ -220,7 +220,7 @@
       "genericError": "Oops, something tangled me up. Try again in a moment! 📎",
       "greetings": {
         "hello": "Hi there! I'm {{name}}, your desktop assistant. Click me if you need anything! 👋",
-        "help": "It looks like you're using ryOS! Need a hand with anything? I'm {{name}}, happy to help. 📎",
+        "help": "It looks like you're using albertOS! Need a hand with anything? I'm {{name}}, happy to help. 📎",
         "looksLike": "Hello! {{name}} here — I can open apps, play music, or answer questions. Just ask! ✨",
         "tip": "Hey! I'm {{name}}. Tip: you can drag me anywhere, and I'll snap to your windows and dock. 🪄"
       },
@@ -250,7 +250,7 @@
     },
     "aboutThisMac": {
       "title": "About This Computer",
-      "description": "Information about ryOS on this computer",
+      "description": "Information about albertOS on this computer",
       "builtInMemory": "Built-in Memory",
       "virtualMemory": "Virtual Memory",
       "virtualMemoryOff": "Off",
@@ -270,17 +270,17 @@
       "updatingAssets": "Updating assets",
       "files": "files",
       "total": "total",
-      "updateReady": "Update ready for ryOS {{version}} ({{buildNumber}})",
+      "updateReady": "Update ready for albertOS {{version}} ({{buildNumber}})",
       "reboot": "Reboot",
       "failedToCacheAssets": "Failed to cache assets",
       "failedToLoadAssetManifest": "Failed to load asset manifest",
       "noAssetsToCache": "No assets to cache",
       "alreadyLatestVersion": "Already using the latest version",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "albertOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "Couldn't check for updates"
     },
     "auth": {
-      "dialogTitle": "Sign In to ryOS",
+      "dialogTitle": "Sign In to albertOS",
       "username": "User name",
       "password": "Password",
       "logIn": "Sign In",
@@ -354,8 +354,8 @@
       "full": "Full",
       "toggleCode": "Toggle code",
       "exitFullscreen": "Exit fullscreen",
-      "codePreviewTitle": "ryOS Code Preview",
-      "codePreviewTitleFullscreen": "ryOS Code Preview Fullscreen"
+      "codePreviewTitle": "albertOS Code Preview",
+      "codePreviewTitleFullscreen": "albertOS Code Preview Fullscreen"
     },
     "swipeInstructions": {
       "title": "Swipe to Switch Windows",
@@ -366,7 +366,7 @@
   },
   "spotlight": {
     "title": "Spotlight",
-    "placeholder": "Search ryOS",
+    "placeholder": "Search albertOS",
     "sections": {
       "apps": "Applications",
       "documents": "Documents",
@@ -441,7 +441,7 @@
         },
         "airdropSharing": {
           "title": "AirDrop Sharing",
-          "description": "Control-click any file to AirDrop it to nearby ryOS users instantly"
+          "description": "Control-click any file to AirDrop it to nearby albertOS users instantly"
         },
         "dropToImport": {
           "title": "Drop to Import",
@@ -839,7 +839,7 @@
       "help": {
         "chatWithRyo": {
           "title": "Chat with Ryo",
-          "description": "Ask anything — Ryo can write code, summarize docs, or explain ryOS features."
+          "description": "Ask anything — Ryo can write code, summarize docs, or explain albertOS features."
         },
         "createEditFiles": {
           "title": "Create & Edit Files",
@@ -892,7 +892,7 @@
         "failedToCreateRoom": "Failed to create room"
       },
       "status": {
-        "loginToRyOS": "Sign in to ryOS",
+        "loginToRyOS": "Sign in to albertOS",
         "loginToChat": "Sign in to Chats",
         "clear": "Clear",
         "leave": "Leave",
@@ -1787,7 +1787,7 @@
       "help": {
         "addVideo": {
           "title": "Add from YouTube",
-          "description": "Paste any YouTube URL and ryOS fetches the metadata into your playlist"
+          "description": "Paste any YouTube URL and albertOS fetches the metadata into your playlist"
         },
         "playback": {
           "title": "Classic Playback",
@@ -2336,7 +2336,7 @@
         },
         "shareSongs": {
           "title": "Share Songs",
-          "description": "YouTube songs share ryOS links, while Apple Music songs copy their Apple Music link"
+          "description": "YouTube songs share albertOS links, while Apple Music songs copy their Apple Music link"
         },
         "displayFullscreen": {
           "title": "Fullscreen Visuals",
@@ -2878,7 +2878,7 @@
         "shareApplet": "Share Applet…",
         "importFromDevice": "Import from Device…",
         "exportAs": "Export As…",
-        "ryosApp": "ryOS App",
+        "ryosApp": "albertOS App",
         "html": "HTML",
         "store": "Store",
         "openAppletStore": "Open Applet Store",
@@ -3084,7 +3084,7 @@
         "edit": "Edit"
       },
       "password": "Password",
-      "passwordDescription": "Protect your ryOS account with a password",
+      "passwordDescription": "Protect your albertOS account with a password",
       "recoveryEmailDescription": "Add an email for password recovery",
       "recoveryEmailTitle": "Recovery Email",
       "verifyAccount": "Verify Account",
@@ -3092,9 +3092,9 @@
       "verify": "Verify",
       "manage": "Manage",
       "displayModeDescription": "Applies a color filter over the desktop wallpaper",
-      "softwareUpdateDescription": "Check whether a newer version of ryOS is available",
-      "sharingDescription": "Back up and share your ryOS data with cloud storage",
-      "dateTimeDescription": "Date and time are set by your device. ryOS uses your time zone preference for clocks, scheduling, and AI context",
+      "softwareUpdateDescription": "Check whether a newer version of albertOS is available",
+      "sharingDescription": "Back up and share your albertOS data with cloud storage",
+      "dateTimeDescription": "Date and time are set by your device. albertOS uses your time zone preference for clocks, scheduling, and AI context",
       "timeZone": "Time Zone",
       "timeZoneDescription": "Used for clocks, scheduling, formatting, and AI context",
       "timezoneAutomatic": "Auto",
@@ -3184,7 +3184,7 @@
       "chatSynth": "Chat Synth",
       "chatSynthDescription": "Typing synth preset for Chats",
       "selectAPreset": "Select a preset",
-      "loggedInToRyOS": "Signed in to ryOS",
+      "loggedInToRyOS": "Signed in to albertOS",
       "accountJoined": "Joined {{date}}",
       "connectionStatus": {
         "connected": "Connected",
@@ -3197,12 +3197,12 @@
       "changePassword": "Change Password",
       "changePasswordButton": "Change",
       "logOut": "Sign Out",
-      "logOutRowDescription": "Sign out of your ryOS account on this device",
+      "logOutRowDescription": "Sign out of your albertOS account on this device",
       "loggingOut": "Signing out…",
       "logOutOfAllDevices": "Sign Out of All Devices",
       "logOutAll": "Sign Out Everywhere…",
-      "logOutOfAllDevicesRowDescription": "Sign out of your ryOS account on every device",
-      "ryOSAccount": "ryOS Account",
+      "logOutOfAllDevicesRowDescription": "Sign out of your albertOS account on every device",
+      "ryOSAccount": "albertOS Account",
       "loginToSendMessages": "Sign in to send messages and more",
       "login": "Sign In",
       "signUp": "Sign Up",
@@ -3266,7 +3266,7 @@
       "telegram": {
         "title": "Telegram",
         "description": "Chat with Ryo in Telegram",
-        "loggedOutDescription": "Sign in to link Telegram to your ryOS account",
+        "loggedOutDescription": "Sign in to link Telegram to your albertOS account",
         "checking": "Checking Telegram link…",
         "linkedAs": "Linked as {{account}}",
         "linkPending": "Link ready - finish it in Telegram",
@@ -3292,7 +3292,7 @@
         "loginRequired": "Sign in to link Telegram",
         "heartbeatInstructionsLabel": "Heartbeat instructions",
         "heartbeatInstructionsDescription": "Customize what Ryo should prioritize when sending proactive Telegram check-ins.",
-        "heartbeatInstructionsPlaceholder": "Example: Focus on unfinished ryOS work, avoid generic reminders, and keep morning briefings action-oriented.",
+        "heartbeatInstructionsPlaceholder": "Example: Focus on unfinished albertOS work, avoid generic reminders, and keep morning briefings action-oriented.",
         "saveInstructions": "Save",
         "savingInstructions": "Saving…",
         "resetInstructions": "Reset",
@@ -3360,7 +3360,7 @@
       "resetAllSettings": "Reset All Settings",
       "resetAllSettingsDescription": "This will clear all saved settings and restore defaults",
       "formatFileSystem": "Format File System",
-      "formatFileSystemDescription": "This will clear all files (except sample docs), images, and custom wallpapers. ryOS will restart after format",
+      "formatFileSystemDescription": "This will clear all files (except sample docs), images, and custom wallpapers. albertOS will restart after format",
       "debugMode": "Debug Mode",
       "debugModeDescription": "Turn on debugging options",
       "showResizers": "Show Resizers",
@@ -4637,7 +4637,7 @@
         },
         "directions": {
           "title": "Directions",
-          "description": "From a place card, open driving directions in Apple Maps — opens in a new tab so ryOS stays open (in-map routing is not available yet)"
+          "description": "From a place card, open driving directions in Apple Maps — opens in a new tab so albertOS stays open (in-map routing is not available yet)"
         },
         "mapTypes": {
           "title": "Map Types",
@@ -4806,7 +4806,7 @@
         },
         "kosync": {
           "title": "KOReader Sync",
-          "description": "Sync reading progress with KOReader on other devices. Sign in to ryOS once, then in KOReader Progress Sync set the custom server to this host’s /api/kosync URL and use your ryOS username and password (prefer filename document matching for EPUBs in /Books)."
+          "description": "Sync reading progress with KOReader on other devices. Sign in to albertOS once, then in KOReader Progress Sync set the custom server to this host’s /api/kosync URL and use your albertOS username and password (prefer filename document matching for EPUBs in /Books)."
         },
         "fonts": {
           "title": "Fonts & Layout",
@@ -4980,7 +4980,7 @@
         },
         "liveCurrency": {
           "title": "Live Currency",
-          "description": "Currency conversions fetch exchange rates through the ryOS API"
+          "description": "Currency conversions fetch exchange rates through the albertOS API"
         }
       }
     }
@@ -5125,14 +5125,14 @@
     "toggleLabel": "Debug"
   },
   "updates": {
-    "desktopAvailable": "ryOS {{version}} for {{platform}} is available",
-    "desktopAppOffer": "ryOS is available as a {{platform}} app",
+    "desktopAvailable": "albertOS {{version}} for {{platform}} is available",
+    "desktopAppOffer": "albertOS is available as a {{platform}} app",
     "download": "Download"
   },
   "settings": {
     "language": {
       "title": "Language",
-      "description": "Select your preferred language for ryOS interface",
+      "description": "Select your preferred language for albertOS interface",
       "english": "English",
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",

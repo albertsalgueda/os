@@ -1,11 +1,11 @@
 {
   "name": "ryos",
-  "productName": "ryOS",
+  "productName": "albertOS",
   "private": true,
   "version": "1.0.9",
   "description": "A web-based desktop operating system, reimagining classic Mac OS, Windows, and more.",
   "author": "Ryo Lu <me@ryo.lu> (https://ryo.lu)",
-  "homepage": "https://os.ryo.lu",
+  "homepage": "https://os.albertsalgueda.com",
   "license": "AGPL-3.0-only",
   "type": "module",
   "main": "dist-electron/main.cjs",

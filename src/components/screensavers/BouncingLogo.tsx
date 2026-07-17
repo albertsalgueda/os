@@ -160,7 +160,7 @@ export function BouncingLogo() {
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="bold"
           >
-            ryOS
+            albertOS
           </text>
         </svg>
       </div>

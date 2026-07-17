@@ -20,7 +20,7 @@ declare global {
   }
 }
 
-const DEFAULT_PUBLIC_ORIGIN = "https://os.ryo.lu";
+const DEFAULT_PUBLIC_ORIGIN = "https://os.albertsalgueda.com";
 const DEFAULT_REALTIME_PROVIDER: RealtimeProvider = "pusher";
 const DEFAULT_WS_PATH = "/ws";
 const DEFAULT_PUSHER_DEV_KEY = "[REDACTED]";

@@ -556,7 +556,7 @@
         "noAppletsOpen": "열린 애플릿 없음",
         "open": "열기…",
         "openAppletStore": "애플릿 스토어 열기",
-        "ryosApp": "ryOS 앱",
+        "ryosApp": "albertOS 앱",
         "shareApplet": "애플릿 공유…",
         "store": "스토어",
         "untitled": "무제",
@@ -656,7 +656,7 @@
         },
         "kosync": {
           "title": "KOReader 동기화",
-          "description": "다른 기기의 KOReader와 독서 진행 상황을 동기화합니다. KOReader Progress Sync에서 사용자 지정 서버를 이 ryOS 호스트의 /api/kosync URL로 설정하고, ryOS 사용자 이름으로 등록한 뒤 /Books의 EPUB에는 파일 이름 문서 매칭을 사용하세요."
+          "description": "다른 기기의 KOReader와 독서 진행 상황을 동기화합니다. KOReader Progress Sync에서 사용자 지정 서버를 이 albertOS 호스트의 /api/kosync URL로 설정하고, albertOS 사용자 이름으로 등록한 뒤 /Books의 EPUB에는 파일 이름 문서 매칭을 사용하세요."
         }
       },
       "import": {
@@ -852,7 +852,7 @@
           "title": "키보드"
         },
         "liveCurrency": {
-          "description": "통화 변환은 ryOS API를 통해 환율을 가져옵니다",
+          "description": "통화 변환은 albertOS API를 통해 환율을 가져옵니다",
           "title": "실시간 통화"
         },
         "scientificMode": {
@@ -1069,7 +1069,7 @@
       },
       "help": {
         "chatWithRyo": {
-          "description": "무엇이든 물어보세요 — Ryo는 코드를 작성하고, 문서를 요약하며, ryOS 기능을 설명할 수 있습니다.",
+          "description": "무엇이든 물어보세요 — Ryo는 코드를 작성하고, 문서를 요약하며, albertOS 기능을 설명할 수 있습니다.",
           "title": "Ryo와 채팅하기"
         },
         "controlApps": {
@@ -1144,7 +1144,7 @@
         "loginRequired": "로그인 필요",
         "loginToChat": "채팅에 로그인",
         "loginToContinue": "Ryo와 계속 채팅하려면 로그인하세요.",
-        "loginToRyOS": "ryOS에 로그인",
+        "loginToRyOS": "albertOS에 로그인",
         "newChat": "새로운 채팅",
         "noTranscriptionText": "전사된 텍스트를 받지 못했습니다",
         "nudgeSent": "👋 *콕 찌르기 보냄*",
@@ -1836,7 +1836,7 @@
       "darkModeDescription": "시스템 설정을 따르거나 어두운 버전을 강제로 사용합니다",
       "darkModeLight": "라이트",
       "darkModeSystem": "시스템",
-      "dateTimeDescription": "날짜 및 시간은 기기에서 설정됩니다. ryOS는 시계, 일정 예약 및 AI 컨텍스트에 사용자의 시간대 설정을 사용합니다.",
+      "dateTimeDescription": "날짜 및 시간은 기기에서 설정됩니다. albertOS는 시계, 일정 예약 및 AI 컨텍스트에 사용자의 시간대 설정을 사용합니다.",
       "debugMode": "디버그 모드",
       "debugModeDescription": "디버깅 설정을 활성화합니다",
       "default": "기본값",
@@ -1891,7 +1891,7 @@
       "errorBoundaries": "오류 경계",
       "errorBoundariesDescription": "테스트를 위해 앱 또는 데스크톱 충돌 대체 기능을 유발합니다",
       "formatFileSystem": "파일 시스템 포맷",
-      "formatFileSystemDescription": "샘플 문서, 이미지, 사용자 지정 배경화면을 제외한 모든 파일이 지워집니다. 포맷 후 ryOS가 다시 시작됩니다",
+      "formatFileSystemDescription": "샘플 문서, 이미지, 사용자 지정 배경화면을 제외한 모든 파일이 지워집니다. 포맷 후 albertOS가 다시 시작됩니다",
       "formatSamples": {
         "dates": "날짜:",
         "numbers": "숫자:",
@@ -1938,9 +1938,9 @@
       "logOutAll": "전체 로그아웃…",
       "logOutButton": "로그아웃…",
       "logOutOfAllDevices": "모든 기기에서 로그아웃",
-      "logOutOfAllDevicesRowDescription": "모든 기기에서 ryOS 계정 로그아웃",
-      "logOutRowDescription": "이 기기에서 ryOS 계정에서 로그아웃",
-      "loggedInToRyOS": "ryOS에 로그인됨",
+      "logOutOfAllDevicesRowDescription": "모든 기기에서 albertOS 계정 로그아웃",
+      "logOutRowDescription": "이 기기에서 albertOS 계정에서 로그아웃",
+      "loggedInToRyOS": "albertOS에 로그인됨",
       "loggingOut": "로그아웃 중…",
       "login": "로그인",
       "loginToSendMessages": "메시지 전송 등 다양한 기능을 위해 로그인하세요",
@@ -1988,7 +1988,7 @@
         "sound": "사운드"
       },
       "password": "암호",
-      "passwordDescription": "암호로 ryOS 계정을 보호하십시오",
+      "passwordDescription": "암호로 albertOS 계정을 보호하십시오",
       "patterns": "패턴",
       "preview": "미리보기",
       "previewActive": "아무 곳이나 클릭하여 종료",
@@ -2023,7 +2023,7 @@
       "resetAllSettings": "모든 설정 초기화",
       "resetAllSettingsDescription": "저장된 모든 설정을 지우고 기본값으로 복원합니다",
       "restore": "복원",
-      "ryOSAccount": "ryOS 계정",
+      "ryOSAccount": "albertOS 계정",
       "screenSaver": "화면 보호기",
       "screenSaverDescription": "일정 시간 동안 활동이 없으면 활성화됩니다",
       "screenSaverExitHint": "종료하려면 아무 키나 누르거나 클릭하십시오.",
@@ -2074,13 +2074,13 @@
       "setup": "설정",
       "shaderEffect": "셰이더 효과",
       "shaderEffectDescription": "성능 집약적인 배경 효과",
-      "sharingDescription": "클라우드 저장소로 ryOS 데이터를 백업하고 공유하십시오",
+      "sharingDescription": "클라우드 저장소로 albertOS 데이터를 백업하고 공유하십시오",
       "show": "표시",
       "showBootScreen": "부팅 화면 표시",
       "showResizers": "크기 조절기 표시",
       "showResizersDescription": "윈도우 크기 조절 핸들 강조 표시",
       "signUp": "회원가입",
-      "softwareUpdateDescription": "ryOS의 최신 버전을 사용할 수 있는지 확인합니다",
+      "softwareUpdateDescription": "albertOS의 최신 버전을 사용할 수 있는지 확인합니다",
       "sound": "사운드",
       "soundTabs": {
         "effects": "효과",
@@ -2115,7 +2115,7 @@
         "heartbeatInstructionsDescription": "Ryo가 선제적으로 Telegram 체크인을 보낼 때 우선순위를 둘 항목을 설정하세요.",
         "heartbeatInstructionsFailed": "Telegram 하트비트 지침 저장 실패",
         "heartbeatInstructionsLabel": "하트비트 지침",
-        "heartbeatInstructionsPlaceholder": "예: 완료되지 않은 ryOS 작업에 집중하고, 일반적인 알림은 피하며, 아침 브리핑은 행동 지침 위주로 유지하세요.",
+        "heartbeatInstructionsPlaceholder": "예: 완료되지 않은 albertOS 작업에 집중하고, 일반적인 알림은 피하며, 아침 브리핑은 행동 지침 위주로 유지하세요.",
         "heartbeatInstructionsSaved": "Telegram 하트비트 지침이 저장되었습니다",
         "instructionsCodeOnly": "아래 코드를 복사하여 Telegram에서 연결을 완료하세요.",
         "instructionsDeepLink": "아래 버튼으로 Telegram을 열고, 시작을 눌러 연결을 완료하세요.",
@@ -2124,7 +2124,7 @@
         "linkPending": "링크 준비 완료 - Telegram에서 마무리하세요",
         "linkReady": "Telegram 링크가 준비되었습니다",
         "linkedAs": "{{account}}으로(로) 연결됨",
-        "loggedOutDescription": "Telegram을 ryOS 계정에 연결하려면 로그인하세요",
+        "loggedOutDescription": "Telegram을 albertOS 계정에 연결하려면 로그인하세요",
         "loginRequired": "Telegram을 연결하려면 로그인해주세요",
         "manage": "관리",
         "openTelegram": "Telegram 열기",
@@ -2497,7 +2497,7 @@
       },
       "help": {
         "airdropSharing": {
-          "description": "파일을 우클릭하여 주변 ryOS 사용자에게 즉시 AirDrop으로 공유하세요",
+          "description": "파일을 우클릭하여 주변 albertOS 사용자에게 즉시 AirDrop으로 공유하세요",
           "title": "AirDrop 공유"
         },
         "browseNavigate": {
@@ -2962,7 +2962,7 @@
           "title": "동기화된 가사"
         },
         "shareSongs": {
-          "description": "YouTube 곡은 ryOS 링크로 공유되고, Apple Music 곡은 Apple Music 링크가 복사됩니다",
+          "description": "YouTube 곡은 albertOS 링크로 공유되고, Apple Music 곡은 Apple Music 링크가 복사됩니다",
           "title": "노래 공유"
         },
         "wheelNavigation": {
@@ -3309,7 +3309,7 @@
       "description": "Apple 지도로 장소 찾기",
       "help": {
         "directions": {
-          "description": "장소 카드에서 Apple 지도로 운전 경로를 엽니다 — 새 탭에서 열려 ryOS는 그대로 유지됩니다(지도 안 경로 안내는 아직 없음).",
+          "description": "장소 카드에서 Apple 지도로 운전 경로를 엽니다 — 새 탭에서 열려 albertOS는 그대로 유지됩니다(지도 안 경로 안내는 아직 없음).",
           "title": "경로"
         },
         "dropPins": {
@@ -4463,7 +4463,7 @@
       },
       "help": {
         "addVideo": {
-          "description": "YouTube URL을 붙여넣으면 ryOS가 메타데이터를 가져와 재생목록에 추가합니다.",
+          "description": "YouTube URL을 붙여넣으면 albertOS가 메타데이터를 가져와 재생목록에 추가합니다.",
           "title": "YouTube에서 추가"
         },
         "loop": {
@@ -4591,7 +4591,7 @@
     "aboutThisMac": {
       "builtInMemory": "내장 메모리",
       "clickToToggle": "클릭하여 전환",
-      "description": "이 컴퓨터의 ryOS 정보",
+      "description": "이 컴퓨터의 albertOS 정보",
       "gb": "GB",
       "largestUnusedBlock": "가장 큰 사용 가능 블록",
       "mb": "MB",
@@ -4660,7 +4660,7 @@
       "genericError": "앗, 문제가 발생하여 엉켜버렸네요. 잠시 후에 다시 시도해 주세요! 📎",
       "greetings": {
         "hello": "안녕하세요! 저는 데스크탑 어시스턴트 {{name}}입니다. 필요한 것이 있으면 저를 클릭해 주세요! 👋",
-        "help": "ryOS를 사용 중이시군요! 도움이 필요하신가요? 저는 {{name}}이며, 기꺼이 도와드리겠습니다. 📎",
+        "help": "albertOS를 사용 중이시군요! 도움이 필요하신가요? 저는 {{name}}이며, 기꺼이 도와드리겠습니다. 📎",
         "looksLike": "안녕하세요! {{name}}입니다. 앱을 열거나 음악을 재생하고, 질문에 답해 드릴 수 있습니다. 무엇이든 물어보세요! ✨",
         "tip": "안녕하세요! 저는 {{name}}입니다. 팁: 저를 어디로든 드래그할 수 있으며, 윈도우나 Dock에 달라붙습니다. 🪄"
       },
@@ -4691,7 +4691,7 @@
       },
       "createAccount": "계정 만들기",
       "creatingAccount": "만드는 중…",
-      "dialogTitle": "ryOS 로그인",
+      "dialogTitle": "albertOS 로그인",
       "forgotPassword": "암호를 잊으셨나요?",
       "logIn": "로그인",
       "logOut": "로그아웃",
@@ -4819,7 +4819,7 @@
     "errorBoundaries": {
       "appDescription": "새 창을 열려면 다시 실행하거나, 충돌한 이 창을 종료하세요. 다른 열려 있는 앱은 계속 실행됩니다.",
       "appHeading": "{{appName}}이(가) 예기치 않게 종료되었습니다",
-      "desktopDescription": "Dock, 데스크탑 및 메뉴 막대를 복원하려면 ryOS를 다시 로드하세요.",
+      "desktopDescription": "Dock, 데스크탑 및 메뉴 막대를 복원하려면 albertOS를 다시 로드하세요.",
       "desktopHeading": "데스크탑이 예기치 않게 종료되었습니다",
       "relaunch": "재실행",
       "reloadDesktop": "데스크탑 다시 로드"
@@ -4834,8 +4834,8 @@
     },
     "htmlPreview": {
       "bannerFallbackTitle": "제목 없는 Applet",
-      "codePreviewTitle": "ryOS 코드 미리보기",
-      "codePreviewTitleFullscreen": "ryOS 코드 미리보기 전체 화면",
+      "codePreviewTitle": "albertOS 코드 미리보기",
+      "codePreviewTitleFullscreen": "albertOS 코드 미리보기 전체 화면",
       "copyHtml": "HTML 코드 복사",
       "downloadHtml": "HTML 다운로드",
       "exitFullscreen": "전체 화면 종료",
@@ -4916,20 +4916,20 @@
     "system": {
       "debugBootScreenTest": "디버그 부팅 화면 테스트 중…",
       "formatFileSystem": "파일 시스템 포맷",
-      "formatFileSystemDesc": "파일 시스템을 포맷하시겠습니까? 모든 문서(샘플 문서 제외), 이미지 및 사용자 지정 배경 화면이 영구적으로 삭제됩니다. 포맷 후 ryOS가 다시 시작됩니다.",
+      "formatFileSystemDesc": "파일 시스템을 포맷하시겠습니까? 모든 문서(샘플 문서 제외), 이미지 및 사용자 지정 배경 화면이 영구적으로 삭제됩니다. 포맷 후 albertOS가 다시 시작됩니다.",
       "formattingFileSystem": "파일 시스템 포맷 중…",
       "rebooting": "재부팅 중…",
       "resetAllSettings": "모든 설정 재설정",
-      "resetAllSettingsDesc": "모든 설정을 재설정하시겠습니까? 저장된 모든 설정이 지워지고 기본 상태로 복원됩니다. 재설정 후 ryOS가 다시 시작됩니다.",
+      "resetAllSettingsDesc": "모든 설정을 재설정하시겠습니까? 저장된 모든 설정이 지워지고 기본 상태로 복원됩니다. 재설정 후 albertOS가 다시 시작됩니다.",
       "resettingSystem": "시스템 재설정 중…",
       "restoringSystem": "시스템 복원 중…",
       "systemRestoring": "시스템 복원 중…",
-      "updatingToRyOS": "ryOS {{version}}으로(로) 업데이트 중…",
-      "updatingToRyOSWithBuild": "ryOS {{version}} ({{buildNumber}})으로(로) 업데이트 중…"
+      "updatingToRyOS": "albertOS {{version}}으로(로) 업데이트 중…",
+      "updatingToRyOSWithBuild": "albertOS {{version}} ({{buildNumber}})으로(로) 업데이트 중…"
     },
     "toast": {
       "alreadyLatestVersion": "이미 최신 버전입니다.",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "albertOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "업데이트를 확인할 수 없습니다.",
       "failedToCacheAssets": "에셋 캐시 실패",
       "failedToLoadAssetManifest": "에셋 매니페스트 로드 실패",
@@ -4937,7 +4937,7 @@
       "noAssetsToCache": "캐시할 에셋 없음",
       "reboot": "재시동",
       "total": "총",
-      "updateReady": "ryOS {{version}} ({{buildNumber}}) 업데이트 준비 완료",
+      "updateReady": "albertOS {{version}} ({{buildNumber}}) 업데이트 준비 완료",
       "updatingAssets": "에셋 업데이트 중",
       "updatingIcons": "아이콘 업데이트 중",
       "updatingSounds": "사운드 업데이트 중",
@@ -5095,7 +5095,7 @@
     "language": {
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",
-      "description": "ryOS 인터페이스의 기본 언어 선택",
+      "description": "albertOS 인터페이스의 기본 언어 선택",
       "english": "English",
       "french": "Français",
       "german": "Deutsch",
@@ -5118,7 +5118,7 @@
     "hintNavigate": "탐색",
     "hintOpen": "열기",
     "noResults": "결과 없음",
-    "placeholder": "ryOS 검색",
+    "placeholder": "albertOS 검색",
     "sections": {
       "applets": "애플릿",
       "apps": "응용 프로그램",
@@ -5142,8 +5142,8 @@
     "topHits": "인기 항목"
   },
   "updates": {
-    "desktopAppOffer": "ryOS를 {{platform}} 앱으로 사용할 수 있습니다",
-    "desktopAvailable": "{{platform}}용 ryOS {{version}}을 사용할 수 있습니다",
+    "desktopAppOffer": "albertOS를 {{platform}} 앱으로 사용할 수 있습니다",
+    "desktopAvailable": "{{platform}}용 albertOS {{version}}을 사용할 수 있습니다",
     "download": "다운로드"
   }
 }

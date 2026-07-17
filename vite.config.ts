@@ -520,9 +520,9 @@ export default defineConfig({
         "icons/*.png",
       ],
       manifest: {
-        name: "ryOS",
-        short_name: "ryOS",
-        description: "An AI OS experience, made with Cursor",
+        name: "albertOS",
+        short_name: "os",
+        description: "A personal web-based desktop operating system.",
         theme_color: "#000000",
         background_color: "#000000",
         display: "standalone",

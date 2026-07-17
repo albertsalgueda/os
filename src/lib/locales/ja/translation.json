@@ -556,7 +556,7 @@
         "noAppletsOpen": "アプレットは開いていません",
         "open": "開く…",
         "openAppletStore": "アプレットストアを開く",
-        "ryosApp": "ryOSアプリ",
+        "ryosApp": "albertOSアプリ",
         "shareApplet": "アプレットを共有…",
         "store": "ストア",
         "untitled": "無題",
@@ -656,7 +656,7 @@
         },
         "kosync": {
           "title": "KOReader同期",
-          "description": "他のデバイスのKOReaderと読書進捗を同期します。KOReader Progress SyncでカスタムサーバーをこのryOSホストの/api/kosync URLに設定し、ryOSのユーザー名で登録し、/Books内のEPUBにはファイル名によるドキュメント照合を使用してください。"
+          "description": "他のデバイスのKOReaderと読書進捗を同期します。KOReader Progress SyncでカスタムサーバーをこのalbertOSホストの/api/kosync URLに設定し、albertOSのユーザー名で登録し、/Books内のEPUBにはファイル名によるドキュメント照合を使用してください。"
         }
       },
       "import": {
@@ -852,7 +852,7 @@
           "title": "キーボード"
         },
         "liveCurrency": {
-          "description": "通貨変換はryOS APIを通じて為替レートを取得します",
+          "description": "通貨変換はalbertOS APIを通じて為替レートを取得します",
           "title": "ライブ通貨"
         },
         "scientificMode": {
@@ -1069,7 +1069,7 @@
       },
       "help": {
         "chatWithRyo": {
-          "description": "何でも聞いてください。Ryoはコードの作成、ドキュメントの要約、ryOSの機能説明などが可能です",
+          "description": "何でも聞いてください。Ryoはコードの作成、ドキュメントの要約、albertOSの機能説明などが可能です",
           "title": "Ryoとチャット"
         },
         "controlApps": {
@@ -1144,7 +1144,7 @@
         "loginRequired": "ログインが必要です",
         "loginToChat": "チャットにログイン",
         "loginToContinue": "Ryoとのチャットを続けるにはログインしてください。",
-        "loginToRyOS": "ryOSにログイン",
+        "loginToRyOS": "albertOSにログイン",
         "newChat": "新しいチャット",
         "noTranscriptionText": "文字起こしテキストが受信されませんでした",
         "nudgeSent": "👋 *つつき送信済み*",
@@ -1836,7 +1836,7 @@
       "darkModeDescription": "システムに合わせる、またはダークバリアントを強制する",
       "darkModeLight": "ライト",
       "darkModeSystem": "システム",
-      "dateTimeDescription": "日時はデバイスの設定に従います。ryOSは時計、スケジュール、AIコンテキストにタイムゾーンの設定を使用します。",
+      "dateTimeDescription": "日時はデバイスの設定に従います。albertOSは時計、スケジュール、AIコンテキストにタイムゾーンの設定を使用します。",
       "debugMode": "デバッグモード",
       "debugModeDescription": "デバッグ設定を有効にする",
       "default": "デフォルト",
@@ -1891,7 +1891,7 @@
       "errorBoundaries": "エラー境界",
       "errorBoundariesDescription": "テスト用に、アプリまたはデスクトップのクラッシュ時のフォールバックをトリガーします。",
       "formatFileSystem": "ファイルシステムをフォーマット",
-      "formatFileSystemDescription": "これにより、すべてのファイル（サンプルドキュメントを除く）、画像、カスタム壁紙が消去されます。フォーマット後、ryOSは再起動します。",
+      "formatFileSystemDescription": "これにより、すべてのファイル（サンプルドキュメントを除く）、画像、カスタム壁紙が消去されます。フォーマット後、albertOSは再起動します。",
       "formatSamples": {
         "dates": "日付:",
         "numbers": "数値:",
@@ -1938,9 +1938,9 @@
       "logOutAll": "すべてログアウト…",
       "logOutButton": "サインアウト…",
       "logOutOfAllDevices": "すべてのデバイスからログアウト",
-      "logOutOfAllDevicesRowDescription": "すべてのデバイスでryOSアカウントからサインアウトする",
-      "logOutRowDescription": "このデバイスで ryOS アカウントからサインアウト",
-      "loggedInToRyOS": "ryOSにログイン済み",
+      "logOutOfAllDevicesRowDescription": "すべてのデバイスでalbertOSアカウントからサインアウトする",
+      "logOutRowDescription": "このデバイスで albertOS アカウントからサインアウト",
+      "loggedInToRyOS": "albertOSにログイン済み",
       "loggingOut": "ログアウト中…",
       "login": "サインイン",
       "loginToSendMessages": "メッセージの送信などにはログイン",
@@ -1988,7 +1988,7 @@
         "sound": "サウンド"
       },
       "password": "パスワード",
-      "passwordDescription": "パスワードでryOSアカウントを保護します",
+      "passwordDescription": "パスワードでalbertOSアカウントを保護します",
       "patterns": "パターン",
       "preview": "プレビュー",
       "previewActive": "どこでもクリックして終了",
@@ -2023,7 +2023,7 @@
       "resetAllSettings": "すべての設定をリセット",
       "resetAllSettingsDescription": "これにより、保存されているすべての設定が消去され、初期設定に戻ります",
       "restore": "復元",
-      "ryOSAccount": "ryOS アカウント",
+      "ryOSAccount": "albertOS アカウント",
       "screenSaver": "スクリーンセーバ",
       "screenSaverDescription": "一定時間操作がないと起動します",
       "screenSaverExitHint": "クリックまたは、いずれかのキーを押して終了",
@@ -2074,13 +2074,13 @@
       "setup": "設定",
       "shaderEffect": "シェーダーエフェクト",
       "shaderEffectDescription": "パフォーマンスに負荷のかかる背景エフェクト",
-      "sharingDescription": "クラウドストレージでryOSのデータをバックアップして共有します",
+      "sharingDescription": "クラウドストレージでalbertOSのデータをバックアップして共有します",
       "show": "表示",
       "showBootScreen": "起動画面を表示",
       "showResizers": "リサイザーを表示",
       "showResizersDescription": "ウインドウのサイズ変更ハンドルを強調表示",
       "signUp": "新規登録",
-      "softwareUpdateDescription": "ryOSの新しいバージョンが利用可能か確認します",
+      "softwareUpdateDescription": "albertOSの新しいバージョンが利用可能か確認します",
       "sound": "サウンド",
       "soundTabs": {
         "effects": "エフェクト",
@@ -2115,7 +2115,7 @@
         "heartbeatInstructionsDescription": "自発的なTelegramでのチェックイン時に、Ryoが何を優先すべきかをカスタマイズします。",
         "heartbeatInstructionsFailed": "Telegramハートビート指示の保存に失敗しました",
         "heartbeatInstructionsLabel": "ハートビート指示",
-        "heartbeatInstructionsPlaceholder": "例：未完了のryOSの作業に集中し、一般的なリマインダーは避け、朝のブリーフィングは行動重視にする。",
+        "heartbeatInstructionsPlaceholder": "例：未完了のalbertOSの作業に集中し、一般的なリマインダーは避け、朝のブリーフィングは行動重視にする。",
         "heartbeatInstructionsSaved": "Telegramハートビート指示を保存しました",
         "instructionsCodeOnly": "以下のコードをコピーし、Telegramで連携を完了してください。",
         "instructionsDeepLink": "以下のボタンでTelegramを開き、Startを押して連携を完了してください。",
@@ -2124,7 +2124,7 @@
         "linkPending": "連携準備完了 - Telegramで完了してください",
         "linkReady": "Telegram連携準備完了",
         "linkedAs": "{{account}}として連携済み",
-        "loggedOutDescription": "TelegramをryOSアカウントに連携するには、ログインしてください。",
+        "loggedOutDescription": "TelegramをalbertOSアカウントに連携するには、ログインしてください。",
         "loginRequired": "Telegramを連携するにはログインしてください",
         "manage": "管理",
         "openTelegram": "Telegramを開く",
@@ -2497,7 +2497,7 @@
       },
       "help": {
         "airdropSharing": {
-          "description": "ファイルを右クリックして、近くのryOSユーザーに即座にAirDropできます",
+          "description": "ファイルを右クリックして、近くのalbertOSユーザーに即座にAirDropできます",
           "title": "AirDrop共有"
         },
         "browseNavigate": {
@@ -2962,7 +2962,7 @@
           "title": "同期歌詞"
         },
         "shareSongs": {
-          "description": "YouTube の曲は ryOS リンクで共有し、Apple Music の曲は Apple Music リンクをコピーします",
+          "description": "YouTube の曲は albertOS リンクで共有し、Apple Music の曲は Apple Music リンクをコピーします",
           "title": "曲を共有"
         },
         "wheelNavigation": {
@@ -3309,7 +3309,7 @@
       "description": "Apple マップで場所を検索",
       "help": {
         "directions": {
-          "description": "場所カードから Apple マップで車のルートを開きます。新しいタブで開くため ryOS はそのままです（地図内のルートは未対応）。",
+          "description": "場所カードから Apple マップで車のルートを開きます。新しいタブで開くため albertOS はそのままです（地図内のルートは未対応）。",
           "title": "経路"
         },
         "dropPins": {
@@ -4463,7 +4463,7 @@
       },
       "help": {
         "addVideo": {
-          "description": "YouTubeのURLを貼り付けると、ryOS가メタデータを取得してプレイリストに追加します。",
+          "description": "YouTubeのURLを貼り付けると、albertOS가メタデータを取得してプレイリストに追加します。",
           "title": "YouTubeから追加"
         },
         "loop": {
@@ -4591,7 +4591,7 @@
     "aboutThisMac": {
       "builtInMemory": "内蔵メモリ",
       "clickToToggle": "クリックで切り替え",
-      "description": "このコンピュータのryOSについて",
+      "description": "このコンピュータのalbertOSについて",
       "gb": "GB",
       "largestUnusedBlock": "最大の未使用ブロック",
       "mb": "MB",
@@ -4660,7 +4660,7 @@
       "genericError": "おっと、何か問題が発生したようです。少ししてからもう一度お試しください！ 📎",
       "greetings": {
         "hello": "こんにちは！私はデスクトップアシスタントの{{name}}です。何かあればクリックしてくださいね！ 👋",
-        "help": "ryOSをお使いのようですね！何かお手伝いしましょうか？{{name}}がお役に立ちます。 📎",
+        "help": "albertOSをお使いのようですね！何かお手伝いしましょうか？{{name}}がお役に立ちます。 📎",
         "looksLike": "こんにちは！{{name}}です。アプリを開いたり、ミュージックを再生したり、質問に答えたりできます。何でも聞いてください！ ✨",
         "tip": "やあ！{{name}}です。ヒント：私を好きな場所にドラッグできます。ウインドウやDockに吸着しますよ。 🪄"
       },
@@ -4691,7 +4691,7 @@
       },
       "createAccount": "アカウントを作成",
       "creatingAccount": "作成中…",
-      "dialogTitle": "ryOSログイン",
+      "dialogTitle": "albertOSログイン",
       "forgotPassword": "パスワードをお忘れですか？",
       "logIn": "サインイン",
       "logOut": "サインアウト",
@@ -4819,7 +4819,7 @@
     "errorBoundaries": {
       "appDescription": "新しいウインドウを開くには再起動するか、このクラッシュしたウインドウを終了してください。他の開いているアプリは引き続き動作します。",
       "appHeading": "{{appName}}は予期せず終了しました",
-      "desktopDescription": "Dock、デスクトップ、メニューバーを復元するには、ryOSをリロードしてください。",
+      "desktopDescription": "Dock、デスクトップ、メニューバーを復元するには、albertOSをリロードしてください。",
       "desktopHeading": "デスクトップは予期せず終了しました",
       "relaunch": "再起動",
       "reloadDesktop": "デスクトップを再読み込み"
@@ -4834,8 +4834,8 @@
     },
     "htmlPreview": {
       "bannerFallbackTitle": "無題のアプレット",
-      "codePreviewTitle": "ryOSコードプレビュー",
-      "codePreviewTitleFullscreen": "ryOSコードプレビュー（フルスクリーン）",
+      "codePreviewTitle": "albertOSコードプレビュー",
+      "codePreviewTitleFullscreen": "albertOSコードプレビュー（フルスクリーン）",
       "copyHtml": "HTMLコードをコピー",
       "downloadHtml": "HTMLをダウンロード",
       "exitFullscreen": "全画面表示を終了",
@@ -4916,20 +4916,20 @@
     "system": {
       "debugBootScreenTest": "デバッグ起動画面テスト…",
       "formatFileSystem": "ファイルシステムをフォーマット",
-      "formatFileSystemDesc": "ファイルシステムをフォーマットしてもよろしいですか？これにより、すべての書類（サンプル書類を除く）、画像、カスタム壁紙が永久に削除されます。フォーマット後、ryOSが再起動します。",
+      "formatFileSystemDesc": "ファイルシステムをフォーマットしてもよろしいですか？これにより、すべての書類（サンプル書類を除く）、画像、カスタム壁紙が永久に削除されます。フォーマット後、albertOSが再起動します。",
       "formattingFileSystem": "ファイルシステムをフォーマット中…",
       "rebooting": "再起動中…",
       "resetAllSettings": "すべての設定をリセット",
-      "resetAllSettingsDesc": "すべての設定をリセットしてもよろしいですか？これにより、保存されたすべての設定がクリアされ、デフォルト状態に復元されます。リセット後、ryOSが再起動します。",
+      "resetAllSettingsDesc": "すべての設定をリセットしてもよろしいですか？これにより、保存されたすべての設定がクリアされ、デフォルト状態に復元されます。リセット後、albertOSが再起動します。",
       "resettingSystem": "システムをリセット中…",
       "restoringSystem": "システムを復元中…",
       "systemRestoring": "システムを復元中…",
-      "updatingToRyOS": "ryOS {{version}}にアップデート中…",
-      "updatingToRyOSWithBuild": "ryOS {{version}} ({{buildNumber}}) にアップデート中…"
+      "updatingToRyOS": "albertOS {{version}}にアップデート中…",
+      "updatingToRyOSWithBuild": "albertOS {{version}} ({{buildNumber}}) にアップデート中…"
     },
     "toast": {
       "alreadyLatestVersion": "最新バージョンです",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "albertOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "アップデートを確認できませんでした",
       "failedToCacheAssets": "アセットのキャッシュに失敗しました",
       "failedToLoadAssetManifest": "アセットマニフェストの読み込みに失敗しました",
@@ -4937,7 +4937,7 @@
       "noAssetsToCache": "キャッシュするアセットがありません",
       "reboot": "再起動",
       "total": "合計",
-      "updateReady": "ryOS {{version}} ({{buildNumber}}) のアップデート準備完了",
+      "updateReady": "albertOS {{version}} ({{buildNumber}}) のアップデート準備完了",
       "updatingAssets": "アセット更新中",
       "updatingIcons": "アイコン更新中",
       "updatingSounds": "サウンド更新中",
@@ -5095,7 +5095,7 @@
     "language": {
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",
-      "description": "ryOSインターフェースの優先言語を選択",
+      "description": "albertOSインターフェースの優先言語を選択",
       "english": "English",
       "french": "Français",
       "german": "Deutsch",
@@ -5118,7 +5118,7 @@
     "hintNavigate": "移動",
     "hintOpen": "開く",
     "noResults": "結果が見つかりません",
-    "placeholder": "ryOS を検索",
+    "placeholder": "albertOS を検索",
     "sections": {
       "applets": "アプレット",
       "apps": "アプリケーション",
@@ -5142,8 +5142,8 @@
     "topHits": "トップヒット"
   },
   "updates": {
-    "desktopAppOffer": "ryOSは{{platform}}アプリとして利用可能です",
-    "desktopAvailable": "{{platform}}版ryOS {{version}}が利用可能です",
+    "desktopAppOffer": "albertOSは{{platform}}アプリとして利用可能です",
+    "desktopAvailable": "{{platform}}版albertOS {{version}}が利用可能です",
     "download": "ダウンロード"
   }
 }

@@ -263,7 +263,7 @@ export function AboutFinderDialog({
                     : "font-os-ui text-xl"
                 )}
               >
-                ryOS
+                albertOS
                 {currentTheme === "system7"
                   ? " 7"
                   : currentTheme === "macosx"
@@ -345,7 +345,7 @@ export function AboutFinderDialog({
                     onClick={(e) => {
                       e.preventDefault();
                       launchApp("internet-explorer", {
-                        url: "os.ryo.lu/docs/changelog",
+                        url: "os.albertsalgueda.com/docs/changelog",
                         year: "current",
                       });
                       onOpenChange(false);

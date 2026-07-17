@@ -241,7 +241,7 @@ export function BootScreen({
                   textShadow: "0 1px 2px rgba(0, 0, 0, 0.15)"
                 }}
               >
-                ryOS X
+                albertOS
               </h1>
               {/* Progress bar - using aqua-progress classes */}
               <div className="aqua-progress w-[220px] h-[20px] rounded-none" style={{ borderRadius: 0 }}>

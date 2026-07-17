@@ -78,7 +78,7 @@ function parseRyosShareTrackId(input: string): string | null {
     const url = new URL(input);
     const publicOrigin = new URL(getAppPublicOrigin());
     const isRyosShareHost =
-      url.hostname === "os.ryo.lu" ||
+      url.hostname === "os.albertsalgueda.com" ||
       url.host === publicOrigin.host ||
       (typeof window !== "undefined" && url.host === window.location.host);
 

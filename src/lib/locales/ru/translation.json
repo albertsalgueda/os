@@ -560,7 +560,7 @@
         "noAppletsOpen": "Нет открытых апплетов",
         "open": "Открыть…",
         "openAppletStore": "Открыть Магазин апплетов",
-        "ryosApp": "Приложение ryOS",
+        "ryosApp": "Приложение albertOS",
         "shareApplet": "Поделиться апплетом…",
         "store": "Магазин",
         "untitled": "Без названия",
@@ -660,7 +660,7 @@
         },
         "kosync": {
           "title": "Синхронизация KOReader",
-          "description": "Синхронизируйте прогресс чтения с KOReader на других устройствах. В KOReader Progress Sync укажите пользовательский сервер с URL /api/kosync этого хоста ryOS, зарегистрируйтесь с именем пользователя ryOS и используйте сопоставление по имени файла для EPUB в /Books."
+          "description": "Синхронизируйте прогресс чтения с KOReader на других устройствах. В KOReader Progress Sync укажите пользовательский сервер с URL /api/kosync этого хоста albertOS, зарегистрируйтесь с именем пользователя albertOS и используйте сопоставление по имени файла для EPUB в /Books."
         }
       },
       "import": {
@@ -856,7 +856,7 @@
           "title": "Клавиатура"
         },
         "liveCurrency": {
-          "description": "Конверсии валют получают курсы обмена через API ryOS",
+          "description": "Конверсии валют получают курсы обмена через API albertOS",
           "title": "Живые валюты"
         },
         "scientificMode": {
@@ -1073,7 +1073,7 @@
       },
       "help": {
         "chatWithRyo": {
-          "description": "Спрашивайте о чем угодно — Ryo может писать код, резюмировать документы или объяснять функции ryOS.",
+          "description": "Спрашивайте о чем угодно — Ryo может писать код, резюмировать документы или объяснять функции albertOS.",
           "title": "Чат с Ryo"
         },
         "controlApps": {
@@ -1148,7 +1148,7 @@
         "loginRequired": "Требуется вход",
         "loginToChat": "Войти в чат",
         "loginToContinue": "Войдите, чтобы продолжить общаться с Рио.",
-        "loginToRyOS": "Войти в ryOS",
+        "loginToRyOS": "Войти в albertOS",
         "newChat": "Новый чат",
         "noTranscriptionText": "Текст транскрипции не получен",
         "nudgeSent": "👋 *подталкивание отправлено*",
@@ -1843,7 +1843,7 @@
       "darkModeDescription": "Следовать системе или принудительно использовать тёмный вариант",
       "darkModeLight": "Светлый",
       "darkModeSystem": "Системный",
-      "dateTimeDescription": "Дата и время устанавливаются вашим устройством. ryOS использует настройки часового пояса для часов, планирования и контекста ИИ",
+      "dateTimeDescription": "Дата и время устанавливаются вашим устройством. albertOS использует настройки часового пояса для часов, планирования и контекста ИИ",
       "debugMode": "Режим отладки",
       "debugModeDescription": "Включить параметры отладки",
       "default": "По умолчанию",
@@ -1898,7 +1898,7 @@
       "errorBoundaries": "Границы ошибок",
       "errorBoundariesDescription": "Вызвать резервные механизмы при сбое приложения или рабочего стола для тестирования",
       "formatFileSystem": "Форматировать файловую систему",
-      "formatFileSystemDescription": "Это удалит все файлы (кроме образцов документов), изображения и пользовательские обои. ryOS перезапустится после форматирования",
+      "formatFileSystemDescription": "Это удалит все файлы (кроме образцов документов), изображения и пользовательские обои. albertOS перезапустится после форматирования",
       "formatSamples": {
         "dates": "Даты:",
         "numbers": "Числа:",
@@ -1945,9 +1945,9 @@
       "logOutAll": "Выйти везде…",
       "logOutButton": "Выйти…",
       "logOutOfAllDevices": "Выйти со всех устройств",
-      "logOutOfAllDevicesRowDescription": "Выйти из учетной записи ryOS на всех устройствах",
-      "logOutRowDescription": "Выйти из учетной записи ryOS на этом устройстве",
-      "loggedInToRyOS": "Вы вошли в ryOS",
+      "logOutOfAllDevicesRowDescription": "Выйти из учетной записи albertOS на всех устройствах",
+      "logOutRowDescription": "Выйти из учетной записи albertOS на этом устройстве",
+      "loggedInToRyOS": "Вы вошли в albertOS",
       "loggingOut": "Выполняется выход…",
       "login": "Войти",
       "loginToSendMessages": "Войдите, чтобы отправлять сообщения и многое другое",
@@ -1995,7 +1995,7 @@
         "sound": "Звук"
       },
       "password": "Пароль",
-      "passwordDescription": "Защитите свою учетную запись ryOS паролем",
+      "passwordDescription": "Защитите свою учетную запись albertOS паролем",
       "patterns": "Шаблоны",
       "preview": "Предпросмотр",
       "previewActive": "Нажмите в любом месте для выхода",
@@ -2030,7 +2030,7 @@
       "resetAllSettings": "Сбросить все настройки",
       "resetAllSettingsDescription": "Это очистит все сохраненные настройки и восстановит значения по умолчанию",
       "restore": "Восстановить",
-      "ryOSAccount": "Учетная запись ryOS",
+      "ryOSAccount": "Учетная запись albertOS",
       "screenSaver": "Заставка",
       "screenSaverDescription": "Активируется после периода бездействия",
       "screenSaverExitHint": "Нажмите или любую клавишу для выхода",
@@ -2081,13 +2081,13 @@
       "setup": "Настроить",
       "shaderEffect": "Эффект шейдера",
       "shaderEffectDescription": "Фоновый эффект, требовательный к производительности",
-      "sharingDescription": "Создавайте резервные копии и делитесь данными ryOS через облачное хранилище",
+      "sharingDescription": "Создавайте резервные копии и делитесь данными albertOS через облачное хранилище",
       "show": "Показать",
       "showBootScreen": "Показывать экран загрузки",
       "showResizers": "Показать манипуляторы размера",
       "showResizersDescription": "Подсвечивать манипуляторы изменения размера окна",
       "signUp": "Зарегистрироваться",
-      "softwareUpdateDescription": "Проверить наличие новой версии ryOS",
+      "softwareUpdateDescription": "Проверить наличие новой версии albertOS",
       "sound": "Звук",
       "soundTabs": {
         "effects": "Эффекты",
@@ -2122,7 +2122,7 @@
         "heartbeatInstructionsDescription": "Настройте приоритеты Ryo при отправке проактивных уведомлений в Telegram.",
         "heartbeatInstructionsFailed": "Не удалось сохранить инструкции heartbeat для Telegram",
         "heartbeatInstructionsLabel": "Инструкции heartbeat",
-        "heartbeatInstructionsPlaceholder": "Пример: Сосредоточься на незавершенной работе в ryOS, избегай общих напоминаний и делай утренние брифинги ориентированными на действия.",
+        "heartbeatInstructionsPlaceholder": "Пример: Сосредоточься на незавершенной работе в albertOS, избегай общих напоминаний и делай утренние брифинги ориентированными на действия.",
         "heartbeatInstructionsSaved": "Инструкции heartbeat для Telegram сохранены",
         "instructionsCodeOnly": "Скопируйте код ниже и используйте его в Telegram, чтобы завершить привязку.",
         "instructionsDeepLink": "Откройте Telegram с помощью кнопки ниже, затем нажмите «Старт», чтобы завершить привязку.",
@@ -2131,7 +2131,7 @@
         "linkPending": "Привязка готова – завершите ее в Telegram",
         "linkReady": "Привязка Telegram готова",
         "linkedAs": "Привязано как {{account}}",
-        "loggedOutDescription": "Войдите, чтобы привязать Telegram к вашей учетной записи ryOS",
+        "loggedOutDescription": "Войдите, чтобы привязать Telegram к вашей учетной записи albertOS",
         "loginRequired": "Войдите, чтобы привязать Telegram",
         "manage": "Управление",
         "openTelegram": "Открыть Telegram",
@@ -2504,7 +2504,7 @@
       },
       "help": {
         "airdropSharing": {
-          "description": "Нажмите правой кнопкой на любой файл, чтобы мгновенно отправить его пользователям ryOS поблизости через AirDrop",
+          "description": "Нажмите правой кнопкой на любой файл, чтобы мгновенно отправить его пользователям albertOS поблизости через AirDrop",
           "title": "Общий доступ через AirDrop"
         },
         "browseNavigate": {
@@ -2969,7 +2969,7 @@
           "title": "Синхронизированный текст"
         },
         "shareSongs": {
-          "description": "Песни YouTube отправляются ссылками ryOS, а для песен Apple Music копируется ссылка Apple Music",
+          "description": "Песни YouTube отправляются ссылками albertOS, а для песен Apple Music копируется ссылка Apple Music",
           "title": "Поделиться песнями"
         },
         "wheelNavigation": {
@@ -3318,7 +3318,7 @@
       "description": "Ищите места в Apple Maps",
       "help": {
         "directions": {
-          "description": "В карточке места откройте автомобильный маршрут в Apple Maps — откроется в новой вкладке, ryOS остаётся открытой (маршрут внутри карты пока недоступен).",
+          "description": "В карточке места откройте автомобильный маршрут в Apple Maps — откроется в новой вкладке, albertOS остаётся открытой (маршрут внутри карты пока недоступен).",
           "title": "Маршрут"
         },
         "dropPins": {
@@ -4474,7 +4474,7 @@
       },
       "help": {
         "addVideo": {
-          "description": "Вставьте любую ссылку YouTube, и ryOS загрузит метаданные в ваш плейлист",
+          "description": "Вставьте любую ссылку YouTube, и albertOS загрузит метаданные в ваш плейлист",
           "title": "Добавить из YouTube"
         },
         "loop": {
@@ -4602,7 +4602,7 @@
     "aboutThisMac": {
       "builtInMemory": "Встроенная память",
       "clickToToggle": "Нажмите, чтобы переключить",
-      "description": "Информация о ryOS на этом компьютере",
+      "description": "Информация о albertOS на этом компьютере",
       "gb": "ГБ",
       "largestUnusedBlock": "Самый большой неиспользуемый блок",
       "mb": "МБ",
@@ -4671,7 +4671,7 @@
       "genericError": "Ой, что-то пошло не так. Попробуй еще раз через минуту! 📎",
       "greetings": {
         "hello": "Привет! Я {{name}}, твой ассистент. Нажми на меня, если тебе что-нибудь понадобится! 👋",
-        "help": "Похоже, ты используешь ryOS! Нужна помощь? Я {{name}}, буду рад помочь. 📎",
+        "help": "Похоже, ты используешь albertOS! Нужна помощь? Я {{name}}, буду рад помочь. 📎",
         "looksLike": "Привет! Это {{name}}. Я могу открывать приложения, воспроизводить музыку или отвечать на вопросы. Просто спроси! ✨",
         "tip": "Привет! Я {{name}}. Совет: меня можно перетащить в любое место, и я прикреплюсь к окнам или Dock. 🪄"
       },
@@ -4702,7 +4702,7 @@
       },
       "createAccount": "Создать учетную запись",
       "creatingAccount": "Создание…",
-      "dialogTitle": "Вход в ryOS",
+      "dialogTitle": "Вход в albertOS",
       "forgotPassword": "Забыли пароль?",
       "logIn": "Войти",
       "logOut": "Выйти",
@@ -4830,7 +4830,7 @@
     "errorBoundaries": {
       "appDescription": "Перезапустите, чтобы открыть новое окно, или закройте это аварийно завершившее работу окно. Другие открытые приложения продолжат работу.",
       "appHeading": "{{appName}} завершило работу неожиданно",
-      "desktopDescription": "Перезагрузите ryOS, чтобы восстановить Dock, Рабочий стол и строку меню.",
+      "desktopDescription": "Перезагрузите albertOS, чтобы восстановить Dock, Рабочий стол и строку меню.",
       "desktopHeading": "Рабочий стол завершил работу неожиданно",
       "relaunch": "Перезапустить",
       "reloadDesktop": "Перезагрузить Рабочий стол"
@@ -4845,8 +4845,8 @@
     },
     "htmlPreview": {
       "bannerFallbackTitle": "Безымянный апплет",
-      "codePreviewTitle": "Предварительный просмотр кода ryOS",
-      "codePreviewTitleFullscreen": "Полноэкранный предварительный просмотр кода ryOS",
+      "codePreviewTitle": "Предварительный просмотр кода albertOS",
+      "codePreviewTitleFullscreen": "Полноэкранный предварительный просмотр кода albertOS",
       "copyHtml": "Скопировать HTML-код",
       "downloadHtml": "Скачать HTML",
       "exitFullscreen": "Выйти из полноэкранного режима",
@@ -4927,20 +4927,20 @@
     "system": {
       "debugBootScreenTest": "Тест экрана загрузки (отладка)…",
       "formatFileSystem": "Форматировать файловую систему",
-      "formatFileSystemDesc": "Вы уверены, что хотите форматировать файловую систему? Это навсегда удалит все документы (кроме образцов документов), изображения и пользовательские обои. ryOS перезапустится после форматирования.",
+      "formatFileSystemDesc": "Вы уверены, что хотите форматировать файловую систему? Это навсегда удалит все документы (кроме образцов документов), изображения и пользовательские обои. albertOS перезапустится после форматирования.",
       "formattingFileSystem": "Форматирование файловой системы…",
       "rebooting": "Перезагрузка…",
       "resetAllSettings": "Сбросить все настройки",
-      "resetAllSettingsDesc": "Вы уверены, что хотите сбросить все настройки? Это удалит все сохраненные настройки и восстановит состояния по умолчанию. ryOS перезапустится после сброса.",
+      "resetAllSettingsDesc": "Вы уверены, что хотите сбросить все настройки? Это удалит все сохраненные настройки и восстановит состояния по умолчанию. albertOS перезапустится после сброса.",
       "resettingSystem": "Сброс системы…",
       "restoringSystem": "Восстановление системы…",
       "systemRestoring": "Восстановление системы…",
-      "updatingToRyOS": "Обновление до ryOS {{version}}…",
-      "updatingToRyOSWithBuild": "Обновление до ryOS {{version}} ({{buildNumber}})…"
+      "updatingToRyOS": "Обновление до albertOS {{version}}…",
+      "updatingToRyOSWithBuild": "Обновление до albertOS {{version}} ({{buildNumber}})…"
     },
     "toast": {
       "alreadyLatestVersion": "Уже установлена последняя версия",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "albertOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "Не удалось проверить наличие обновлений",
       "failedToCacheAssets": "Не удалось кэшировать ресурсы",
       "failedToLoadAssetManifest": "Не удалось загрузить манифест ресурсов",
@@ -4948,7 +4948,7 @@
       "noAssetsToCache": "Нет ресурсов для кэширования",
       "reboot": "Перезагрузить",
       "total": "всего",
-      "updateReady": "Обновление готово для ryOS {{version}} ({{buildNumber}})",
+      "updateReady": "Обновление готово для albertOS {{version}} ({{buildNumber}})",
       "updatingAssets": "Обновление ресурсов",
       "updatingIcons": "Обновление значков",
       "updatingSounds": "Обновление звуков",
@@ -5110,7 +5110,7 @@
     "language": {
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",
-      "description": "Выберите предпочитаемый язык для интерфейса ryOS",
+      "description": "Выберите предпочитаемый язык для интерфейса albertOS",
       "english": "Английский",
       "french": "Français",
       "german": "Deutsch",
@@ -5133,7 +5133,7 @@
     "hintNavigate": "навигация",
     "hintOpen": "открыть",
     "noResults": "Ничего не найдено",
-    "placeholder": "Поиск в ryOS",
+    "placeholder": "Поиск в albertOS",
     "sections": {
       "applets": "Апплеты",
       "apps": "Приложения",
@@ -5157,8 +5157,8 @@
     "topHits": "Лучшие результаты"
   },
   "updates": {
-    "desktopAppOffer": "ryOS доступна как приложение для {{platform}}",
-    "desktopAvailable": "Доступна ryOS {{version}} для {{platform}}",
+    "desktopAppOffer": "albertOS доступна как приложение для {{platform}}",
+    "desktopAvailable": "Доступна albertOS {{version}} для {{platform}}",
     "download": "Загрузить"
   }
 }

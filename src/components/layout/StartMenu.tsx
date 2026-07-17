@@ -156,7 +156,7 @@ export function StartMenu({ apps }: StartMenuProps) {
                     textAlign: "left",
                   }}
                 >
-                  ryOS{" "}
+                  albertOS{" "}
                   <span style={{ fontWeight: "100" }}>
                     {isWinXp ? t("common.startMenu.ryosProfessional") : t("common.startMenu.ryos98")}
                   </span>

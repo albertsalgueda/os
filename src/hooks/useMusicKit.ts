@@ -351,7 +351,7 @@ export interface UseMusicKitResult {
 }
 
 const DEFAULT_APP_METADATA: MusicKit.AppMetadata = {
-  name: "ryOS iPod",
+  name: "albertOS iPod",
   build: "1.0.0",
 };
 

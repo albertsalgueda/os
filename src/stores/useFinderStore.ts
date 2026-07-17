@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import { useAppStore } from "@/stores/useAppStore";
+import { LOCAL_ROOT_PATH } from "@/apps/finder/hooks/useLocalFileSystem";
 
 import type {
   ViewType,
@@ -73,7 +74,7 @@ export const useFinderStore = create<FinderStoreState>()(
         return "list";
       },
 
-      createInstance: (instanceId, initialPath = "/") =>
+      createInstance: (instanceId, initialPath = LOCAL_ROOT_PATH) =>
         set((state) => {
           if (state.instances[instanceId]) {
             return state;

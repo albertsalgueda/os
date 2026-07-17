@@ -108,7 +108,7 @@ export function TelegramLinkDialog({
     <div className="flex items-center justify-center gap-2">
       <img
         src="/icons/mac-192.png"
-        alt="ryOS"
+        alt="albertOS"
         className="size-8 shrink-0 object-contain"
       />
       <ArrowRight size={14} weight="bold" className="shrink-0 text-black/45" />

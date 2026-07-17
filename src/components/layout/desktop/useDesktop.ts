@@ -14,6 +14,7 @@ import { useThemeFlags } from "@/hooks/useThemeFlags";
 import { useFilesStore, type FileSystemItem } from "@/stores/useFilesStore";
 import { useShallow } from "zustand/react/shallow";
 import { useLaunchApp } from "@/hooks/useLaunchApp";
+import { LOCAL_ROOT_PATH } from "@/apps/finder/hooks/useLocalFileSystem";
 import type { LaunchOriginRect } from "@/stores/useAppStore";
 import { STORES, dbOperations } from "@/utils/indexedDB";
 import { useTranslation } from "react-i18next";
@@ -139,6 +140,11 @@ export function useDesktop({
             item.status === "active" &&
             item.path.startsWith("/Desktop/") &&
             !item.isDirectory &&
+            // Keep the desktop minimal: never surface default app shortcuts
+            // (iPod, Applet Store, …) or the Applications folder alias. Only
+            // Macintosh HD (and Trash) plus any user-created file aliases show.
+            item.aliasType !== "app" &&
+            !(item.aliasType === "file" && item.aliasTarget === "/Applications") &&
             (!item.hiddenOnThemes ||
               !item.hiddenOnThemes.includes(currentTheme))
         )
@@ -283,7 +289,7 @@ export function useDesktop({
 
   const handleFinderOpen = (e: ReactMouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
-    localStorage.setItem("ryos:app:finder:initial-path", "/");
+    localStorage.setItem("ryos:app:finder:initial-path", LOCAL_ROOT_PATH);
     const finderApp = apps.find((app) => app.id === "finder");
     if (finderApp) {
       const rect = e.currentTarget.getBoundingClientRect();

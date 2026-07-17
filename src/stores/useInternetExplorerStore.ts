@@ -15,7 +15,7 @@ export interface Favorite {
 
 // Define a constant for domains that bypass the proxy when in "now" mode
 export const DIRECT_PASSTHROUGH_DOMAINS = [
-  "os.ryo.lu",
+  "os.albertsalgueda.com",
   "hcsimulator.com",
   "os.rocorgi.wang",
   "iso-city.com",
@@ -112,20 +112,6 @@ export const DEFAULT_FAVORITES: Favorite[] = [
     url: "https://apple.com",
     favicon: "https://www.google.com/s2/favicons?domain=apple.com&sz=32",
     year: "2001",
-    isDirectory: false,
-  },
-  {
-    title: "Ryo",
-    url: "https://ryo.lu",
-    favicon: "https://www.google.com/s2/favicons?domain=ryo.lu&sz=32",
-    year: "current",
-    isDirectory: false,
-  },
-  {
-    title: "ryOS Docs",
-    url: "https://os.ryo.lu/docs",
-    favicon: "https://www.google.com/s2/favicons?domain=os.ryo.lu&sz=32",
-    year: "current",
     isDirectory: false,
   },
   {

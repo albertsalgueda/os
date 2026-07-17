@@ -115,7 +115,7 @@ function ScreenSaverPreview({ type, onClick, disabled, label }: ScreenSaverPrevi
           const y = Math.abs(((frame * 1.5) % (canvas.height * 2)) - canvas.height);
           ctx.fillStyle = `hsl(${frame * 5 % 360}, 100%, 50%)`;
           ctx.font = "bold 12px sans-serif";
-          ctx.fillText("ryOS", x - 15, y + 5);
+          ctx.fillText("albertOS", x - 15, y + 5);
           break;
         }
         case "pipes": {

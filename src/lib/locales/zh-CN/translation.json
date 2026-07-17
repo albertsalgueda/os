@@ -556,7 +556,7 @@
         "noAppletsOpen": "没有打开的 Applet",
         "open": "打开…",
         "openAppletStore": "打开 Applet Store",
-        "ryosApp": "ryOS App",
+        "ryosApp": "albertOS App",
         "shareApplet": "共享 Applet…",
         "store": "商店",
         "untitled": "未命名",
@@ -656,7 +656,7 @@
         },
         "kosync": {
           "title": "KOReader 同步",
-          "description": "与其他设备上的 KOReader 同步阅读进度。在 KOReader Progress Sync 中，将自定义服务器设置为此 ryOS 主机的 /api/kosync URL，使用你的 ryOS 用户名注册，并对 /Books 中的 EPUB 使用文件名文档匹配。"
+          "description": "与其他设备上的 KOReader 同步阅读进度。在 KOReader Progress Sync 中，将自定义服务器设置为此 albertOS 主机的 /api/kosync URL，使用你的 albertOS 用户名注册，并对 /Books 中的 EPUB 使用文件名文档匹配。"
         }
       },
       "import": {
@@ -852,7 +852,7 @@
           "title": "键盘"
         },
         "liveCurrency": {
-          "description": "货币换算通过 ryOS API 获取汇率",
+          "description": "货币换算通过 albertOS API 获取汇率",
           "title": "实时汇率"
         },
         "scientificMode": {
@@ -1069,7 +1069,7 @@
       },
       "help": {
         "chatWithRyo": {
-          "description": "询问任何问题 —— Ryo 可以编写代码、摘要文件或说明 ryOS 功能。",
+          "description": "询问任何问题 —— Ryo 可以编写代码、摘要文件或说明 albertOS 功能。",
           "title": "与 Ryo 聊天"
         },
         "controlApps": {
@@ -1144,7 +1144,7 @@
         "loginRequired": "需要登录",
         "loginToChat": "登录“聊天”",
         "loginToContinue": "登录以继续与 Ryo 聊天。",
-        "loginToRyOS": "登录 ryOS",
+        "loginToRyOS": "登录 albertOS",
         "newChat": "新建聊天",
         "noTranscriptionText": "未收到转录文本。",
         "nudgeSent": "👋 *轻推已发送*",
@@ -1836,7 +1836,7 @@
       "darkModeDescription": "跟随系统，或强制使用深色版本",
       "darkModeLight": "浅色",
       "darkModeSystem": "系统",
-      "dateTimeDescription": "日期和时间由您的设备设置。ryOS 会将您的时区偏好用于时钟、日程安排和 AI 上下文。",
+      "dateTimeDescription": "日期和时间由您的设备设置。albertOS 会将您的时区偏好用于时钟、日程安排和 AI 上下文。",
       "debugMode": "调试模式",
       "debugModeDescription": "启用调试选项",
       "default": "默认",
@@ -1891,7 +1891,7 @@
       "errorBoundaries": "错误边界",
       "errorBoundariesDescription": "触发 App 或桌面崩溃的备用方案以供测试。",
       "formatFileSystem": "格式化文件系统",
-      "formatFileSystemDescription": "这将清除所有文件（示例文件除外）、图像和自定义壁纸。格式化后 ryOS 将重新启动。",
+      "formatFileSystemDescription": "这将清除所有文件（示例文件除外）、图像和自定义壁纸。格式化后 albertOS 将重新启动。",
       "formatSamples": {
         "dates": "日期：",
         "numbers": "数字：",
@@ -1938,9 +1938,9 @@
       "logOutAll": "在所有设备上退出登录…",
       "logOutButton": "退出登录…",
       "logOutOfAllDevices": "退出所有设备上的登录",
-      "logOutOfAllDevicesRowDescription": "在所有设备上退出您的 ryOS 账户",
-      "logOutRowDescription": "在此设备上退出您的 ryOS 账户",
-      "loggedInToRyOS": "已登录 ryOS",
+      "logOutOfAllDevicesRowDescription": "在所有设备上退出您的 albertOS 账户",
+      "logOutRowDescription": "在此设备上退出您的 albertOS 账户",
+      "loggedInToRyOS": "已登录 albertOS",
       "loggingOut": "正在退出登录…",
       "login": "登录",
       "loginToSendMessages": "登录以发送消息及使用更多功能",
@@ -1988,7 +1988,7 @@
         "sound": "声音"
       },
       "password": "密码",
-      "passwordDescription": "使用密码保护您的 ryOS 账户",
+      "passwordDescription": "使用密码保护您的 albertOS 账户",
       "patterns": "花纹",
       "preview": "预览",
       "previewActive": "点按任意位置即可退出",
@@ -2023,7 +2023,7 @@
       "resetAllSettings": "重置所有设置",
       "resetAllSettingsDescription": "这将清除所有已保存的设置并恢复默认值",
       "restore": "恢复",
-      "ryOSAccount": "ryOS 账户",
+      "ryOSAccount": "albertOS 账户",
       "screenSaver": "屏幕保护程序",
       "screenSaverDescription": "在闲置一段时间后启用",
       "screenSaverExitHint": "点击或按下任何键即可退出",
@@ -2074,13 +2074,13 @@
       "setup": "设置",
       "shaderEffect": "着色器效果",
       "shaderEffectDescription": "高性能开销的背景效果",
-      "sharingDescription": "使用云存储备份和共享您的 ryOS 数据",
+      "sharingDescription": "使用云存储备份和共享您的 albertOS 数据",
       "show": "显示",
       "showBootScreen": "显示启动画面",
       "showResizers": "显示窗口大小调整手柄",
       "showResizersDescription": "突出显示窗口大小调整手柄",
       "signUp": "注册",
-      "softwareUpdateDescription": "检查是否有较新版本的 ryOS 可供使用",
+      "softwareUpdateDescription": "检查是否有较新版本的 albertOS 可供使用",
       "sound": "音效",
       "soundTabs": {
         "effects": "效果",
@@ -2115,7 +2115,7 @@
         "heartbeatInstructionsDescription": "自定义 Ryo 主动发送 Telegram 问候时应优先关注的内容。",
         "heartbeatInstructionsFailed": "保存 Telegram 心跳指令失败",
         "heartbeatInstructionsLabel": "心跳指令",
-        "heartbeatInstructionsPlaceholder": "示例：专注于未完成的 ryOS 工作，避免笼统的提醒，并保持早晨简报以行动为导向。",
+        "heartbeatInstructionsPlaceholder": "示例：专注于未完成的 albertOS 工作，避免笼统的提醒，并保持早晨简报以行动为导向。",
         "heartbeatInstructionsSaved": "已保存 Telegram 心跳指令",
         "instructionsCodeOnly": "复制以下代码并在 Telegram 中使用，以完成关联。",
         "instructionsDeepLink": "使用下方按钮打开 Telegram，然后按“开始”完成关联。",
@@ -2124,7 +2124,7 @@
         "linkPending": "关联已就绪，请在 Telegram 中完成操作",
         "linkReady": "Telegram 关联已就绪",
         "linkedAs": "关联账户：{{account}}",
-        "loggedOutDescription": "登录以将 Telegram 关联到您的 ryOS 账户",
+        "loggedOutDescription": "登录以将 Telegram 关联到您的 albertOS 账户",
         "loginRequired": "请登录以关联 Telegram",
         "manage": "管理",
         "openTelegram": "打开 Telegram",
@@ -2497,7 +2497,7 @@
       },
       "help": {
         "airdropSharing": {
-          "description": "右键单击任意文件，即可通过 AirDrop 发送给附近的 ryOS 用户",
+          "description": "右键单击任意文件，即可通过 AirDrop 发送给附近的 albertOS 用户",
           "title": "AirDrop 分享"
         },
         "browseNavigate": {
@@ -2962,7 +2962,7 @@
           "title": "同步歌词"
         },
         "shareSongs": {
-          "description": "YouTube 歌曲会共享 ryOS 链接，Apple Music 歌曲则会复制 Apple Music 链接",
+          "description": "YouTube 歌曲会共享 albertOS 链接，Apple Music 歌曲则会复制 Apple Music 链接",
           "title": "分享歌曲"
         },
         "wheelNavigation": {
@@ -3309,7 +3309,7 @@
       "description": "使用 Apple 地图寻找地点",
       "help": {
         "directions": {
-          "description": "从地点卡在 Apple 地图中打开驾车路线。路线会在新标签页中打开，因此 ryOS 会保持运行（暂不支持地图内路线规划）。",
+          "description": "从地点卡在 Apple 地图中打开驾车路线。路线会在新标签页中打开，因此 albertOS 会保持运行（暂不支持地图内路线规划）。",
           "title": "路线"
         },
         "dropPins": {
@@ -4463,7 +4463,7 @@
       },
       "help": {
         "addVideo": {
-          "description": "粘贴任意 YouTube URL，ryOS 会获取元数据并将视频添加到播放列表",
+          "description": "粘贴任意 YouTube URL，albertOS 会获取元数据并将视频添加到播放列表",
           "title": "从 YouTube 添加"
         },
         "loop": {
@@ -4591,7 +4591,7 @@
     "aboutThisMac": {
       "builtInMemory": "内置内存",
       "clickToToggle": "点按以切换",
-      "description": "这台电脑上的 ryOS 信息",
+      "description": "这台电脑上的 albertOS 信息",
       "gb": "GB",
       "largestUnusedBlock": "最大未使用内存块",
       "mb": "MB",
@@ -4660,7 +4660,7 @@
       "genericError": "哎呀，出了一点小状况。请稍后重试！📎",
       "greetings": {
         "hello": "你好！我是 {{name}}，你的桌面助手。如有任何需要，请点按我！👋",
-        "help": "看来你正在使用 ryOS！需要帮忙吗？我是 {{name}}，很高兴为你提供帮助。📎",
+        "help": "看来你正在使用 albertOS！需要帮忙吗？我是 {{name}}，很高兴为你提供帮助。📎",
         "looksLike": "你好！我是 {{name}} — 我可以打开 App、播放音乐或回答问题。尽管开口问我吧！✨",
         "tip": "嘿！我是 {{name}}。提示：你可以将我拖移到任何地方，我会吸附到窗口和程序坞。🪄"
       },
@@ -4691,7 +4691,7 @@
       },
       "createAccount": "创建账户",
       "creatingAccount": "正在创建…",
-      "dialogTitle": "登录 ryOS",
+      "dialogTitle": "登录 albertOS",
       "forgotPassword": "忘记密码？",
       "logIn": "登录",
       "logOut": "退出登录",
@@ -4819,7 +4819,7 @@
     "errorBoundaries": {
       "appDescription": "重新打开该 App 以打开新窗口，或关闭这个已崩溃的窗口。其他已打开的 App 将继续运行。",
       "appHeading": "「{{appName}}」意外退出",
-      "desktopDescription": "重新加载 ryOS 以恢复 Dock、桌面和菜单栏。",
+      "desktopDescription": "重新加载 albertOS 以恢复 Dock、桌面和菜单栏。",
       "desktopHeading": "桌面意外退出",
       "relaunch": "重新打开",
       "reloadDesktop": "重新加载桌面"
@@ -4834,8 +4834,8 @@
     },
     "htmlPreview": {
       "bannerFallbackTitle": "未命名 Applet",
-      "codePreviewTitle": "ryOS 代码预览",
-      "codePreviewTitleFullscreen": "ryOS 代码预览（全屏幕）",
+      "codePreviewTitle": "albertOS 代码预览",
+      "codePreviewTitleFullscreen": "albertOS 代码预览（全屏幕）",
       "copyHtml": "复制 HTML 代码",
       "downloadHtml": "下载 HTML",
       "exitFullscreen": "退出全屏幕",
@@ -4916,20 +4916,20 @@
     "system": {
       "debugBootScreenTest": "调试启动屏幕测试…",
       "formatFileSystem": "格式化文件系统",
-      "formatFileSystemDesc": "确定要格式化文件系统吗？这将永久删除所有文稿（示例文稿除外）、图像和自定义墙纸。格式化后 ryOS 将重新启动。",
+      "formatFileSystemDesc": "确定要格式化文件系统吗？这将永久删除所有文稿（示例文稿除外）、图像和自定义墙纸。格式化后 albertOS 将重新启动。",
       "formattingFileSystem": "正在格式化文件系统…",
       "rebooting": "正在重新启动…",
       "resetAllSettings": "重置所有设置",
-      "resetAllSettingsDesc": "确定要重置所有设置吗？这将清除所有已保存的设置并恢复默认状态。重置后 ryOS 将重新启动。",
+      "resetAllSettingsDesc": "确定要重置所有设置吗？这将清除所有已保存的设置并恢复默认状态。重置后 albertOS 将重新启动。",
       "resettingSystem": "正在重置系统…",
       "restoringSystem": "正在恢复系统…",
       "systemRestoring": "正在恢复系统…",
-      "updatingToRyOS": "正在更新到 ryOS {{version}}…",
-      "updatingToRyOSWithBuild": "正在更新到 ryOS {{version}}（{{buildNumber}}）…"
+      "updatingToRyOS": "正在更新到 albertOS {{version}}…",
+      "updatingToRyOSWithBuild": "正在更新到 albertOS {{version}}（{{buildNumber}}）…"
     },
     "toast": {
       "alreadyLatestVersion": "已经是最新版本",
-      "alreadyLatestVersionDetail": "ryOS {{version}} ({{buildNumber}})",
+      "alreadyLatestVersionDetail": "albertOS {{version}} ({{buildNumber}})",
       "couldNotCheckUpdates": "无法检查更新",
       "failedToCacheAssets": "缓存资源失败",
       "failedToLoadAssetManifest": "加载资源清单失败",
@@ -4937,7 +4937,7 @@
       "noAssetsToCache": "没有可缓存的资源",
       "reboot": "重新启动",
       "total": "总计",
-      "updateReady": "ryOS {{version}} ({{buildNumber}}) 的更新已就绪",
+      "updateReady": "albertOS {{version}} ({{buildNumber}}) 的更新已就绪",
       "updatingAssets": "正在更新资源",
       "updatingIcons": "正在更新图标",
       "updatingSounds": "正在更新声音",
@@ -5095,7 +5095,7 @@
     "language": {
       "chineseSimplified": "简体中文",
       "chineseTraditional": "繁體中文",
-      "description": "选择 ryOS 界面的首选语言",
+      "description": "选择 albertOS 界面的首选语言",
       "english": "英文",
       "french": "Français",
       "german": "Deutsch",
@@ -5118,7 +5118,7 @@
     "hintNavigate": "导航",
     "hintOpen": "打开",
     "noResults": "找不到结果",
-    "placeholder": "搜索 ryOS",
+    "placeholder": "搜索 albertOS",
     "sections": {
       "applets": "小程序",
       "apps": "应用程序",
@@ -5142,8 +5142,8 @@
     "topHits": "最佳匹配"
   },
   "updates": {
-    "desktopAppOffer": "ryOS 已推出 {{platform}} 版应用程序",
-    "desktopAvailable": "适用于 {{platform}} 的 ryOS {{version}} 现已推出",
+    "desktopAppOffer": "albertOS 已推出 {{platform}} 版应用程序",
+    "desktopAvailable": "适用于 {{platform}} 的 albertOS {{version}} 现已推出",
     "download": "下载"
   }
 }

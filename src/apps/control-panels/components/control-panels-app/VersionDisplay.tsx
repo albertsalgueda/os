@@ -15,14 +15,14 @@ export function VersionDisplay() {
 
   return (
     <p className="text-[11px] text-neutral-600 font-geneva-12">
-      ryOS {displayVersion}
+      albertOS {displayVersion}
       {displayBuild}
       {" · "}
       <a
         href="#"
         onClick={(e) => {
           e.preventDefault();
-          launchApp("internet-explorer", { url: "os.ryo.lu/docs/changelog", year: "current" });
+          launchApp("internet-explorer", { url: "os.albertsalgueda.com/docs/changelog", year: "current" });
         }}
         className="text-os-link hover:underline"
       >

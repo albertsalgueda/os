@@ -72,20 +72,6 @@ type FinderUndoAction =
   | { type: "moveToTrash"; fileName: string; originalPath: string }
   | { type: "rename"; basePath: string; oldName: string; newName: string };
 
-const SIDEBAR_HIDDEN_FOLDERS = new Set(["/Trash", "/Sites"]);
-
-// Explicit sidebar folder order; any visible folders not listed here keep their
-// natural order, appended after these.
-const SIDEBAR_FOLDER_ORDER = [
-  "/Applications",
-  "/Applets",
-  "/Documents",
-  "/Images",
-  "/Music",
-  "/Videos",
-  "/Books",
-];
-
 // Type for Finder initial data
 export interface FinderInitialData {
   path?: string;
@@ -272,7 +258,7 @@ export function useFinderLogic({
     // Get initial path from initialData or localStorage
     const typedInitialData = initialData as FinderInitialData | undefined;
     const storedPath = localStorage.getItem("ryos:app:finder:initial-path");
-    const initialPath = typedInitialData?.path || storedPath || "/";
+    const initialPath = typedInitialData?.path || storedPath || LOCAL_ROOT_PATH;
     createFinderInstance(instanceId, initialPath);
 
     // Apply initial view preference if provided
@@ -342,7 +328,7 @@ export function useFinderLogic({
   const initialFileSystemPath =
     currentInstance?.currentPath ||
     (initialData as FinderInitialData | undefined)?.path ||
-    "/";
+    LOCAL_ROOT_PATH;
 
   const {
     currentPath,
@@ -1579,26 +1565,9 @@ export function useFinderLogic({
   );
 
   const sidebarItems = useMemo(() => {
-    const visibleRootFolders = rootFolders.filter(
-      (f) => !SIDEBAR_HIDDEN_FOLDERS.has(f.path)
-    );
-
-    // Order by the explicit list; unlisted folders keep their natural order
-    // after the listed ones (stable sort).
-    const orderRank = (path: string) => {
-      const i = SIDEBAR_FOLDER_ORDER.indexOf(path);
-      return i === -1 ? Number.MAX_SAFE_INTEGER : i;
-    };
-    visibleRootFolders.sort((a, b) => orderRank(a.path) - orderRank(b.path));
-
-    const places = visibleRootFolders
-      .map((f) => ({
-        name: getTranslatedFolderNameFromName(f.name) || f.name,
-        path: f.path,
-        icon: f.icon,
-        divider: false,
-        isAirDrop: false,
-      }));
+    // Only the real local disk and AirDrop are shown; the virtual VFS folders
+    // (Documents, Images, Music, Videos, Books, Downloads, Desktop, …) are
+    // intentionally omitted so Finder centers on the real filesystem.
     return [
       { name: t("apps.finder.window.macintoshHd"), path: LOCAL_ROOT_PATH, icon: "/icons/default/disk.png", divider: false, isAirDrop: false },
       {
@@ -1608,9 +1577,8 @@ export function useFinderLogic({
         divider: true,
         isAirDrop: true,
       },
-      ...places,
     ];
-  }, [rootFolders, t]);
+  }, [t]);
 
   const activeSidebarPath = useMemo(() => {
     if (isAirDropView) return "__airdrop__";
